@@ -187,12 +187,7 @@ header p {
     color: #1d1d1f;
 }
 
-.update-date {
-    font-size: 11px;
-    color: #86868b;
-    margin-top: 4px;
-    font-weight: 500;
-}
+
 
 .update-item.new {
     background-color: #f0f8ff;
@@ -503,10 +498,6 @@ header p {
     
     .update-text {
         font-size: 12px;
-    }
-    
-    .update-date {
-        font-size: 10px;
     }
     
     .country-list {
