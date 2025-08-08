@@ -15,6 +15,7 @@ class CountryDataViewer {
         this.organizeByCountry();
         this.setupEventListeners();
         this.renderCountryList();
+        this.loadUpdates();
         
         // Handle initial URL state
         this.handleInitialState();
@@ -581,12 +582,74 @@ Notes:
             this.showBrowser();
         }
     }
+
+    loadUpdates() {
+        const updates = [
+            {
+                icon: '🔧',
+                text: 'Fixed CSV parsing for quoted fields with commas - resolves issue with company names containing commas being split across multiple columns',
+                date: '2024-12-19',
+                isNew: true
+            },
+            {
+                icon: '📊',
+                text: 'Fixed visualization charts for all countries - resolved stats file format compatibility issues',
+                date: '2024-12-19',
+                isNew: true
+            },
+            {
+                icon: '➕',
+                text: 'Added missing stats file for LK (Sri Lanka) - now shows proper visualization',
+                date: '2024-12-19',
+                isNew: true
+            },
+            {
+                icon: '🌍',
+                text: 'Enhanced country data browser with improved search and filtering capabilities',
+                date: '2024-12-19',
+                isNew: false
+            },
+            {
+                icon: '📈',
+                text: 'Added comprehensive entity type distribution charts for all countries',
+                date: '2024-12-19',
+                isNew: false
+            }
+        ];
+
+        const notificationContent = document.getElementById('notificationContent');
+        if (!notificationContent) return;
+
+        let updatesHTML = '';
+        updates.forEach(update => {
+            const newClass = update.isNew ? 'new' : '';
+            updatesHTML += `
+                <div class="update-item ${newClass}">
+                    <div class="update-icon">${update.icon}</div>
+                    <div class="update-text">
+                        ${update.text}
+                        <div class="update-date">${update.date}</div>
+                    </div>
+                </div>
+            `;
+        });
+
+        notificationContent.innerHTML = updatesHTML;
+    }
 }
 
 // Global function for back button
 function closeViewer() {
     app.currentView = 'browser';
     app.showBrowser();
+}
+
+// Global function to close notification
+function closeNotification() {
+    const notification = document.getElementById('updatesNotification');
+    if (notification) {
+        notification.style.display = 'none';
+    }
 }
 
 // Initialize the application
