@@ -42,6 +42,9 @@ venv/
 ehthumbs.db
 Thumbs.db
 
+# Remove any existing .DS_Store files
+**/.DS_Store
+
 # Logs
 *.log
 
