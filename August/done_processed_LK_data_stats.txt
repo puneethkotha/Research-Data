@@ -1,0 +1,25 @@
+LK_data.csv Processing Statistics
+================================
+
+Total Records: 148
+
+Language Distribution:
+- English (en): 148 records (100.0%)
+
+Entity Type Distribution:
+- Company: 131 records (88.5%)
+- Individual: 9 records (6.1%)
+- Government: 6 records (4.1%)
+- Family Firm: 2 records (1.4%)
+
+Corrections Made:
+- None required
+
+Notes:
+- Sri Lanka primarily uses English for business entities
+- Most entities are companies (88.5%) with English legal suffixes (LTD, PLC, PVT)
+- Nine individuals identified with English names
+- Six government entities including banking institutions and treasury
+- Two family firms: E W BALASURIYA & CO (PVT) LTD and GEORGE STEUART & COMPANY LTD.
+- Strong presence of banking and financial services companies
+- Many companies have traditional Sri Lankan business names (Ceylon, Lanka, etc.)
