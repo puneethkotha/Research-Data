@@ -59,10 +59,15 @@ class ResearchDataHandler(http.server.SimpleHTTPRequestHandler):
         """Return list of available files."""
         try:
             files = []
-            august_dir = 'August'
+            august_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'August')
+            
+            print(f"Looking for August directory at: {august_dir}")
+            print(f"Directory exists: {os.path.exists(august_dir)}")
             
             if os.path.exists(august_dir):
-                for filename in os.listdir(august_dir):
+                file_list = os.listdir(august_dir)
+                print(f"Found {len(file_list)} files in August directory")
+                for filename in file_list:
                     if filename.endswith(('.csv', '.txt')):
                         file_path = os.path.join(august_dir, filename)
                         file_size = os.path.getsize(file_path)
@@ -88,9 +93,13 @@ class ResearchDataHandler(http.server.SimpleHTTPRequestHandler):
                             'records': records
                         })
             
+            print(f"Returning {len(files)} files to client")
             self.send_json_response(files)
             
         except Exception as e:
+            print(f"Error in handle_files_api: {str(e)}")
+            import traceback
+            traceback.print_exc()
             self.send_error(500, f"Error reading files: {str(e)}")
     
     def handle_file_content_api(self, query):
@@ -149,7 +158,11 @@ def main():
             print("Invalid port number. Using default port 8000.")
     
     # Change to the directory containing this script
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(script_dir)
+    print(f"Working directory: {os.getcwd()}")
+    print(f"Files in current directory: {os.listdir('.')}")
+    print(f"August directory exists: {os.path.exists('August')}")
     
     with socketserver.TCPServer(("", port), ResearchDataHandler) as httpd:
         print(f"🚀 Research Data Web Application Server")
