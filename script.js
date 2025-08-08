@@ -636,6 +636,7 @@ Notes:
             `;
         });
 
+        console.log('Loading updates without dates:', updatesHTML);
         notificationContent.innerHTML = updatesHTML;
     }
 }
