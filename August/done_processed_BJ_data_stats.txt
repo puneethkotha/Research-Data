@@ -1,14 +1,17 @@
+BJ_data.csv Processing Statistics
+================================
+
+Total Records: 6
+
 Language Distribution:
-- French (fr): 6 entries
-- Other: 0 entries
+- French (fr): 6 records (100.0%)
 
 Entity Type Distribution:
-- Companies: 1 entry
-- Government Entities: 0 entries
-- Individuals: 5 entries
-- Family Firms: 0 entries
+- Individual: 5 records (83.3%)
+- Company: 1 record (16.7%)
 
-Total Entries: 6
+Corrections Made:
+- None required
 
 Notes:
 - All entries are in French, which is the official language of Benin

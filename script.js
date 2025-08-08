@@ -399,10 +399,10 @@ Notes:
         lines.forEach(line => {
             const trimmedLine = line.trim();
             
-            // Extract total records
-            if (trimmedLine.includes('Total Records:')) {
-                const match = trimmedLine.match(/Total Records:\s*(\d+)/);
-                if (match) stats.totalRecords = parseInt(match[1]);
+            // Extract total records (handle both "Total Records:" and "Total Entries:")
+            if (trimmedLine.includes('Total Records:') || trimmedLine.includes('Total Entries:')) {
+                const match = trimmedLine.match(/Total (Records|Entries):\s*(\d+)/);
+                if (match) stats.totalRecords = parseInt(match[2]);
             }
             
             // Check for section headers
@@ -420,26 +420,54 @@ Notes:
                 return;
             }
             
-            // Extract language distribution
+            // Extract language distribution (handle both formats)
             if (inLanguageSection && trimmedLine.startsWith('-')) {
-                const langMatch = trimmedLine.match(/- ([^(]+) \(([^)]+)\): (\d+) records/);
+                // Try the standard format first
+                let langMatch = trimmedLine.match(/- ([^(]+) \(([^)]+)\): (\d+) records/);
                 if (langMatch) {
                     const languageName = langMatch[1].trim();
                     const languageCode = langMatch[2].trim();
                     const count = parseInt(langMatch[3]);
                     stats.languages[languageName] = count;
                     console.log(`Found language: ${languageName} (${languageCode}): ${count}`);
+                } else {
+                    // Try alternative format without percentages
+                    langMatch = trimmedLine.match(/- ([^(]+) \(([^)]+)\): (\d+) entries/);
+                    if (langMatch) {
+                        const languageName = langMatch[1].trim();
+                        const languageCode = langMatch[2].trim();
+                        const count = parseInt(langMatch[3]);
+                        stats.languages[languageName] = count;
+                        console.log(`Found language: ${languageName} (${languageCode}): ${count}`);
+                    }
                 }
             }
             
-            // Extract entity type distribution
+            // Extract entity type distribution (handle both formats)
             if (inEntitySection && trimmedLine.startsWith('-')) {
-                const entityMatch = trimmedLine.match(/- ([^:]+): (\d+) records/);
+                // Try the standard format first
+                let entityMatch = trimmedLine.match(/- ([^:]+): (\d+) records/);
                 if (entityMatch) {
                     const entityType = entityMatch[1].trim();
                     const count = parseInt(entityMatch[2]);
                     stats.entityTypes[entityType] = count;
                     console.log(`Found entity type: ${entityType}: ${count}`);
+                } else {
+                    // Try alternative format with "entries" and different entity type names
+                    entityMatch = trimmedLine.match(/- ([^:]+): (\d+) entries/);
+                    if (entityMatch) {
+                        let entityType = entityMatch[1].trim();
+                        const count = parseInt(entityMatch[2]);
+                        
+                        // Map alternative entity type names to standard ones
+                        if (entityType === 'Companies') entityType = 'Company';
+                        if (entityType === 'Individuals') entityType = 'Individual';
+                        if (entityType === 'Government Entities') entityType = 'Government';
+                        if (entityType === 'Family Firms') entityType = 'Family Firm';
+                        
+                        stats.entityTypes[entityType] = count;
+                        console.log(`Found entity type: ${entityType}: ${count}`);
+                    }
                 }
             }
         });
