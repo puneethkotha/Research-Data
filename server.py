@@ -59,26 +59,26 @@ class ResearchDataHandler(http.server.SimpleHTTPRequestHandler):
         """Return list of available files."""
         try:
             files = []
-            august_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'OUTPUT PROC(AUGUST)')
+            august_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'August')
             
-            print(f"Looking for OUTPUT PROC(AUGUST) directory at: {august_dir}")
+            print(f"Looking for August directory at: {august_dir}")
             print(f"Directory exists: {os.path.exists(august_dir)}")
             
             if os.path.exists(august_dir):
                 file_list = os.listdir(august_dir)
-                print(f"Found {len(file_list)} files in OUTPUT PROC(AUGUST) directory")
+                print(f"Found {len(file_list)} files in August directory")
                 for filename in file_list:
                     if filename.endswith(('.csv', '.txt')):
                         file_path = os.path.join(august_dir, filename)
                         file_size = os.path.getsize(file_path)
                         
                         # Extract country code from filename
-                        if filename.startswith('out_') and filename.endswith('_data.csv'):
-                            country_code = filename[4:-9]  # Extract country code
+                        if filename.startswith('done_processed_') and filename.endswith('_data.csv'):
+                            country_code = filename[15:-9]  # Extract country code
                             file_type = 'csv'
                             records = self.count_csv_records(file_path)
-                        elif filename.startswith('out_') and filename.endswith('_data_stats.txt'):
-                            country_code = filename[4:-14]  # Extract country code
+                        elif filename.startswith('done_processed_') and filename.endswith('_data_stats.txt'):
+                            country_code = filename[15:-14]  # Extract country code
                             file_type = 'stats'
                             records = None
                         else:
@@ -162,13 +162,13 @@ def main():
     os.chdir(script_dir)
     print(f"Working directory: {os.getcwd()}")
     print(f"Files in current directory: {os.listdir('.')}")
-    print(f"OUTPUT PROC(AUGUST) directory exists: {os.path.exists('OUTPUT PROC(AUGUST)')}")
+    print(f"August directory exists: {os.path.exists('August')}")
     
     with socketserver.TCPServer(("", port), ResearchDataHandler) as httpd:
         print(f"🚀 Research Data Web Application Server")
         print(f"📍 Serving at: http://localhost:{port}")
         print(f"📁 Root directory: {os.getcwd()}")
-        print(f"📊 Data directory: {os.path.join(os.getcwd(), 'OUTPUT PROC(AUGUST)')}")
+        print(f"📊 Data directory: {os.path.join(os.getcwd(), 'August')}")
         print("\n✨ Features:")
         print("   • Static file serving")
         print("   • API endpoints for file operations")
