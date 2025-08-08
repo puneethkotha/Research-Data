@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Data Classification Research - Parent Entity Analysis
 
 ## Project Overview
@@ -136,3 +137,7 @@ For questions about the research methodology, data processing, or web applicatio
 ---
 
 **Note**: This web application is designed for academic research purposes and provides a comprehensive interface for exploring and analyzing the processed parent entity classification data.
+=======
+# Research-Data
+Parent entity classification analysis
+>>>>>>> bbbdbfa48999d1cfb257fc8d2015f26ec38ac749
