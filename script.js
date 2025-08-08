@@ -317,7 +317,7 @@ Notes:
                     }
                 } else if (char === ',' && !inQuotes) {
                     // End of field
-                    result.push(current);
+                    result.push(current.trim());
                     current = '';
                 } else {
                     current += char;
@@ -325,12 +325,16 @@ Notes:
             }
             
             // Add the last field
-            result.push(current);
+            result.push(current.trim());
             return result;
         };
 
         const headers = parseCSVLine(lines[0]);
         const rows = lines.slice(1).filter(line => line.trim()).map(line => parseCSVLine(line));
+
+        // Debug: Log the first few rows to check parsing
+        console.log('CSV Headers:', headers);
+        console.log('First 3 rows:', rows.slice(0, 3));
 
         let tableHTML = '<table class="csv-table"><thead><tr>';
         headers.forEach(header => {
@@ -432,7 +436,10 @@ Notes:
 
     createStatsChart(stats, countryCode) {
         const ctx = document.getElementById('statsChart');
-        if (!ctx) return;
+        if (!ctx) {
+            console.error('Chart canvas element not found');
+            return;
+        }
         
         // Destroy existing chart
         if (this.charts[countryCode]) {
@@ -440,48 +447,56 @@ Notes:
         }
         
         const entityData = Object.entries(stats.entityTypes);
+        console.log(`Creating chart for ${countryCode}:`, stats, entityData);
         
         // Only create chart if we have entity data
         if (entityData.length === 0) {
+            console.warn(`No entity data found for ${countryCode}`);
             ctx.parentElement.style.display = 'none';
             return;
         }
         
         ctx.parentElement.style.display = 'block';
         
-        // Create entity type chart
-        this.charts[countryCode] = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: entityData.map(([label]) => label),
-                datasets: [{
-                    data: entityData.map(([, value]) => value),
-                    backgroundColor: ['#0066cc', '#34c759', '#ff9500', '#ff3b30', '#af52de'],
-                    borderWidth: 2,
-                    borderColor: '#ffffff'
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                        labels: {
-                            padding: 20,
-                            usePointStyle: true
-                        }
-                    },
-                    title: {
-                        display: true,
-                        text: `${countryCode} - Entity Type Distribution`,
-                        font: {
-                            size: 14
+        try {
+            // Create entity type chart
+            this.charts[countryCode] = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: entityData.map(([label]) => label),
+                    datasets: [{
+                        data: entityData.map(([, value]) => value),
+                        backgroundColor: ['#0066cc', '#34c759', '#ff9500', '#ff3b30', '#af52de'],
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                usePointStyle: true
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: `${countryCode} - Entity Type Distribution`,
+                            font: {
+                                size: 14
+                            }
                         }
                     }
                 }
-            }
-        });
+            });
+            console.log(`Chart created successfully for ${countryCode}`);
+        } catch (error) {
+            console.error(`Error creating chart for ${countryCode}:`, error);
+            ctx.parentElement.innerHTML = `<div class="error">Error creating chart: ${error.message}</div>`;
+        }
     }
 
     showViewer() {
