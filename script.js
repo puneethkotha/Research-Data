@@ -297,8 +297,40 @@ Notes:
             return;
         }
 
-        const headers = lines[0].split(',');
-        const rows = lines.slice(1).filter(line => line.trim());
+        // Parse CSV properly handling quoted fields
+        const parseCSVLine = (line) => {
+            const result = [];
+            let current = '';
+            let inQuotes = false;
+            
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                
+                if (char === '"') {
+                    if (inQuotes && line[i + 1] === '"') {
+                        // Escaped quote
+                        current += '"';
+                        i++; // Skip next quote
+                    } else {
+                        // Toggle quote state
+                        inQuotes = !inQuotes;
+                    }
+                } else if (char === ',' && !inQuotes) {
+                    // End of field
+                    result.push(current);
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+            
+            // Add the last field
+            result.push(current);
+            return result;
+        };
+
+        const headers = parseCSVLine(lines[0]);
+        const rows = lines.slice(1).filter(line => line.trim()).map(line => parseCSVLine(line));
 
         let tableHTML = '<table class="csv-table"><thead><tr>';
         headers.forEach(header => {
@@ -307,9 +339,8 @@ Notes:
         tableHTML += '</tr></thead><tbody>';
 
         rows.forEach(row => {
-            const cells = row.split(',');
             tableHTML += '<tr>';
-            cells.forEach(cell => {
+            row.forEach(cell => {
                 tableHTML += `<td>${cell.replace(/"/g, '')}</td>`;
             });
             tableHTML += '</tr>';
