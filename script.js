@@ -586,31 +586,31 @@ Notes:
     loadUpdates() {
         const updates = [
             {
-                icon: '🔧',
+                icon: 'FIX',
                 text: 'Fixed CSV parsing for quoted fields with commas - resolves issue with company names containing commas being split across multiple columns',
                 date: '2024-12-19',
                 isNew: true
             },
             {
-                icon: '📊',
+                icon: 'CHART',
                 text: 'Fixed visualization charts for all countries - resolved stats file format compatibility issues',
                 date: '2024-12-19',
                 isNew: true
             },
             {
-                icon: '➕',
+                icon: 'ADD',
                 text: 'Added missing stats file for LK (Sri Lanka) - now shows proper visualization',
                 date: '2024-12-19',
                 isNew: true
             },
             {
-                icon: '🌍',
+                icon: 'ENHANCE',
                 text: 'Enhanced country data browser with improved search and filtering capabilities',
                 date: '2024-12-19',
                 isNew: false
             },
             {
-                icon: '📈',
+                icon: 'DATA',
                 text: 'Added comprehensive entity type distribution charts for all countries',
                 date: '2024-12-19',
                 isNew: false
