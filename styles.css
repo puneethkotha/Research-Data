@@ -171,12 +171,14 @@ header p {
     padding: 24px;
 }
 
-/* Data and Stats Sections */
+/* Data, Stats, and Visualization Sections */
+.visualization-section,
 .data-section,
 .stats-section {
     margin-bottom: 32px;
 }
 
+.visualization-section h3,
 .data-section h3,
 .stats-section h3 {
     font-size: 18px;

@@ -204,6 +204,7 @@ class CountryDataViewer {
         document.getElementById('viewerTitle').textContent = `Country: ${country.code}`;
         
         // Show loading states
+        document.getElementById('chartContent').innerHTML = '<div class="loading">Loading visualization...</div>';
         document.getElementById('csvContent').innerHTML = '<div class="loading">Loading data...</div>';
         document.getElementById('statsContent').innerHTML = '<div class="loading">Loading statistics...</div>';
         
@@ -219,8 +220,9 @@ class CountryDataViewer {
             // Load and visualize stats
             if (country.statsFile) {
                 const statsContent = await this.loadFileContent(country.statsFile.filePath);
-                this.displayStatsWithVisualization(statsContent, document.getElementById('statsContent'), country.code);
+                this.displayStatsWithVisualization(statsContent, document.getElementById('chartContent'), document.getElementById('statsContent'), country.code);
             } else {
+                document.getElementById('chartContent').innerHTML = '<div class="loading">No visualization available</div>';
                 document.getElementById('statsContent').innerHTML = '<div class="loading">No statistics available</div>';
             }
             
@@ -317,24 +319,21 @@ Notes:
         container.innerHTML = tableHTML;
     }
 
-    displayStatsWithVisualization(content, container, countryCode) {
+    displayStatsWithVisualization(content, chartContainer, statsContainer, countryCode) {
         // Parse stats content to extract data
         const stats = this.parseStatsContent(content);
         
-        // Create visualization
+        // Show chart in chart container
         const chartHTML = `
-            <div class="chart-container">
-                <canvas id="statsChart" width="400" height="300"></canvas>
-            </div>
+            <canvas id="statsChart" width="400" height="300"></canvas>
         `;
+        chartContainer.innerHTML = chartHTML;
         
-        // Show stats text
+        // Show stats text in stats container
         const statsHTML = `
             <div class="stats-content">${content}</div>
-            ${chartHTML}
         `;
-        
-        container.innerHTML = statsHTML;
+        statsContainer.innerHTML = statsHTML;
         
         // Create chart after DOM is updated
         setTimeout(() => {
