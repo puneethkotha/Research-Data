@@ -1,0 +1,21 @@
+Language Distribution:
+- English (en): 11 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 9 entries
+- Government Entities: 2 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 11
+
+Notes:
+- All entries are in English, which is the official language of Fiji
+- One individual identified: KUMAN RAKET
+- Two government entities:
+  * NPT AGENCY
+  * FIJI (referring to the country itself)
+- One correction made: VINOD PATEL & CO. LIMITED changed from family_firm to company (the "& CO." structure suggests a partnership/company rather than a family firm)
+- Finnish business terminology used: OY (Osakeyhtiö) in FIRMA BRANDT GROUP OY LTD
+- All other classifications have been verified and are correct

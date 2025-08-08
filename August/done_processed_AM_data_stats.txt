@@ -1,0 +1,42 @@
+AM_data.csv Processing Statistics
+================================
+
+Total Records: 21
+
+Language Distribution:
+- English (en): 12 records (57.1%)
+- Armenian (hy): 5 records (23.8%)
+- Russian (ru): 2 records (9.5%)
+- Indonesian (id): 1 record (4.8%)
+- German (de): 1 record (4.8%)
+
+Entity Type Distribution:
+- Company: 16 records (76.2%)
+- Individual: 3 records (14.3%)
+- Government: 1 record (4.8%)
+- Family Firm: 1 record (4.8%)
+
+Corrections Made:
+- MOE RI SAN KHAM PA NI: id → hy (Armenian company name)
+- PZ CUSSONS HOLDINGS LTD: de → en (English company)
+- GEGHAMA: de → hy (Armenian individual name)
+- KHANDANYAN NARINE: sw → hy (Armenian individual name)
+- ZAKRYTOE AKTSIONERNOE OBSHCHESTVO SELL GRUP UORLDVAID KHOLDING: de → en (English company)
+- OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU ELIT-NN FINANS KOMPANI: de → ru (Russian company)
+- L-M-I CAPITAL: ca → en (English company)
+- OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU VERAKANGNUM: pt → ru (Russian company)
+- KHACHATRYAN ARTUR: tl → hy (Armenian individual name)
+- VETSIKYAN HAYKAZ: vi → hy (Armenian individual name)
+- ARTUR - ASHOT: tl → hy (Armenian family firm)
+- ZAKRYTOE AKTSIONERNOE OBSHCHESTVO KEI-ES-EM-EI: de → en (English company)
+- ARMENIA COPPER PROGRAMME CJSC: de → en (English company)
+- BUSINESS CENTER OF INVESTMENTS LLC: de → en (English company)
+- CENTER FOR AGRIBUSINESS AND RURAL DEVELOPMENT FOUNDATION: de → en (English company)
+- ARMENIA: tl → en (English country name)
+
+Notes:
+- Significant language detection errors in original classification
+- Armenian names and companies properly identified
+- Russian companies with "ZAKRYTOE AKTSIONERNOE OBSHCHESTVO" and "OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU" suffixes
+- English companies with international business names
+- One Indonesian company operating in Armenia

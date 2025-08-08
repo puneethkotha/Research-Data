@@ -1,0 +1,20 @@
+Language Distribution:
+- French (fr): 7 entries
+- English (en): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 4 entries
+- Government Entities: 1 entry
+- Individuals: 3 entries
+- Family Firms: 0 entries
+
+Total Entries: 8
+
+Notes:
+- Seven French entries reflecting Madagascar's official language
+- One English entry for the government entity
+- One government entity: GOVERNMENT OF MADAGASCAR
+- Three individuals identified with typical Malagasy names
+- French business terminology used: S.A R.L. (Société Anonyme à Responsabilité Limitée)
+- All classifications have been verified and are correct

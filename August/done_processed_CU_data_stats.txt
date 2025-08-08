@@ -1,0 +1,27 @@
+Language Distribution:
+- Spanish (es): 15 entries
+- English (en): 4 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 12 entries
+- Government Entities: 7 entries
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 19
+
+Notes:
+- Spanish is the official language of Cuba
+- Four English entries are international companies
+- Two individuals identified with typical Cuban names
+- Seven government entities identified, including:
+  * STATE OF CUBA
+  * EMPRESA CUBANA DEL PETROLEO (Cuban Petroleum Company)
+  * EMPRESA CUBANA DEL TABACO (Cuban Tobacco Company)
+  * CUBANIQUEL S.A. (Cuban Nickel Company)
+  * INSTITUTO NACIONAL DE RECURSOS HIDRAULICOS (National Water Resources Institute)
+  * BANCO CENTRAL DE CUBA (Central Bank of Cuba)
+  * CORPORACION CIMEX S.A. (Cuban state corporation) - corrected from family_firm to government
+- Spanish business terminology used: S.A. (Sociedad Anónima)
+- All classifications have been verified and corrected where necessary

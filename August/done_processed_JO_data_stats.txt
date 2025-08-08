@@ -1,0 +1,25 @@
+JO_data.csv Processing Statistics
+================================
+
+Total Records: 178
+
+Language Distribution:
+- Arabic (ar): 95 records (53.4%)
+- English (en): 83 records (46.6%)
+
+Entity Type Distribution:
+- Individual: 85 records (47.8%)
+- Company: 85 records (47.8%)
+- Government: 5 records (2.8%)
+- Family Firm: 3 records (1.7%)
+
+Corrections Made:
+- MOAYED ZOULGHINA AND HUSSEIN ABED MOHAMMAD ALI: company → individual
+
+Notes:
+- Balanced Arabic and English language environment
+- Equal distribution between individuals and companies (47.8% each)
+- Five government entities: GOVERNMENT CONTRIBUTIONS MANAGEMENT COMPANY, ELECTRICITY DISTRIBUTION COMPANY, SOCIAL SECURITY CORPORATION, UNITED NATIONS EDUCATIONAL SCIENTIFIC AND CULTURAL ORGANIZATION, GOVERNMENT OF JORDAN
+- Three family firms identified: MANASEER GROUP, ELIA NUQUL AND SONS COMPANY, ARABIA TRADING & CONSULTING CO. LTD, HAMOODA BROTHERS
+- "MOAYED ZOULGHINA AND HUSSEIN ABED MOHAMMAD ALI" is clearly two people's names, not a company
+- Strong presence of banking, insurance, and investment companies

@@ -1,0 +1,24 @@
+JM_data.csv Processing Statistics
+================================
+
+Total Records: 25
+
+Language Distribution:
+- English (en): 25 records (100.0%)
+
+Entity Type Distribution:
+- Company: 15 records (60.0%)
+- Family Firm: 5 records (20.0%)
+- Government: 4 records (16.0%)
+- Individual: 1 record (4.0%)
+
+Corrections Made:
+- None - all classifications were correct
+
+Notes:
+- 100% English language environment
+- Primarily corporate entities with some family firms
+- Four government entities: JAMAICA LIVESTOCK ASSOCIATION, RADIO JAMAICA, JAMAICA MONEY MARKET BROKERS, JAMAICA NATIONAL BUILDING SOCIETY
+- Five family firms identified: CHANG BROTHERS, GRACEKENNEDY, MUSSON, DERRIMON TRADING, K.L.E. GROUP
+- One individual: MARCUS JAMES H.
+- Strong presence of financial services and investment companies

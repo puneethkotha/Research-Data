@@ -1,0 +1,25 @@
+BD_data.csv Processing Statistics
+================================
+
+Total Records: 40
+
+Language Distribution:
+- English (en): 38 records (95.0%)
+- Arabic (ar): 2 records (5.0%)
+
+Entity Type Distribution:
+- Company: 33 records (82.5%)
+- Government: 5 records (12.5%)
+- Individual: 2 records (5.0%)
+
+Corrections Made:
+- SPONSORS: individual → company
+- INSTITUTE: individual → company
+- BANGLADESH: individual → government
+
+Notes:
+- Primarily English language environment with some Arabic names
+- High concentration of banking and financial institutions
+- Several government entities including ministries and state corporations
+- "SPONSORS" and "INSTITUTE" are organizational entities, not individuals
+- "BANGLADESH" refers to the country itself, hence government entity

@@ -1,0 +1,25 @@
+KN_data.csv Processing Statistics
+================================
+
+Total Records: 67
+
+Language Distribution:
+- English (en): 60 records (89.6%)
+- Russian (ru): 7 records (10.4%)
+
+Entity Type Distribution:
+- Company: 65 records (97.0%)
+- Individual: 1 record (1.5%)
+- Government: 1 record (1.5%)
+
+Corrections Made:
+- ABOLGHASEM EMAM MUSAVI: company → individual
+
+Notes:
+- Primarily English language environment with some Russian
+- Very high concentration of corporate entities (97.0%)
+- One government entity: GOVERNMENT OF ST. CHRISTOPHER
+- One individual: ABOLGHASEM EMAM MUSAVI
+- Many investment and holding companies
+- Several Russian company names with "KOMPANIYA" prefix
+- No family firms identified in this dataset

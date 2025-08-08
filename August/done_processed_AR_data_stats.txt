@@ -1,0 +1,30 @@
+AR_data.csv Processing Statistics
+================================
+
+Total Records: 468
+
+Language Distribution:
+- Spanish (es): 445 records (95.1%)
+- English (en): 23 records (4.9%)
+
+Entity Type Distribution:
+- Company: 280 records (59.8%)
+- Family Firm: 120 records (25.6%)
+- Individual: 45 records (9.6%)
+- Government: 23 records (4.9%)
+
+Major Corrections Made:
+- BERKLEY INTERNATIONAL ARGENTINA S.A.: es → en (English company name)
+- METABOWERKE GMBH CO: es → en (German company name in English)
+- Multiple family firm classifications corrected from company to family_firm
+- Multiple individual classifications corrected from company to individual
+- Government entities properly identified (ministerios, gobernaciones, secretarias)
+
+Notes:
+- Argentina is predominantly Spanish-speaking with Spanish business entities
+- Spanish legal suffixes: SA, S.A., S.A.I.C., SRL, LTDA, COOPERATIVA
+- Family firms identified by multiple personal names or "FAMILIA" prefix
+- Government entities include ministries, provincial governments, and state agencies
+- English companies operating in Argentina (international businesses)
+- High proportion of family firms reflects Argentina's business culture
+- Many entries with "AND" or "Y" connecting multiple names indicate family firms

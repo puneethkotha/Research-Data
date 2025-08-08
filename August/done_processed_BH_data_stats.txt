@@ -1,0 +1,27 @@
+BH_data.csv Processing Statistics
+================================
+
+Total Records: 186
+
+Language Distribution:
+- English (en): 142 records (76.3%)
+- Arabic (ar): 44 records (23.7%)
+
+Entity Type Distribution:
+- Company: 142 records (76.3%)
+- Individual: 32 records (17.2%)
+- Family Firm: 8 records (4.3%)
+- Government: 4 records (2.2%)
+
+Corrections Made:
+- None required
+
+Notes:
+- Bahrain is a bilingual country with English and Arabic business entities
+- English companies with legal suffixes: BSC, WLL, SPC, LTD, E.C.
+- Arabic individuals with "AL" prefixes and traditional Arabic names
+- Family firms identified by "& SONS", "FAMILY", "BROTHERS" indicators
+- Government entities include ministries and government offices
+- Many companies have "CLOSED" status indicating closed joint stock companies
+- One Indian individual (JAYANDAR KUMAR PRABHUDAS) with English name
+- High proportion of companies reflects Bahrain's business-friendly environment

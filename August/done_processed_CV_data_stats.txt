@@ -1,0 +1,18 @@
+Language Distribution:
+- Portuguese (pt): 5 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 4 entries
+- Government Entities: 1 entry
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 5
+
+Notes:
+- All entries are in Portuguese, which is the official language of Cape Verde
+- One government entity: CAPE VERDE (referring to the country itself)
+- Portuguese business terminology used: S.A./SA (Sociedade Anónima)
+- One company uses SARL (Société à Responsabilité Limitée) which is French terminology but commonly used in Portuguese-speaking countries
+- All classifications have been verified and are correct

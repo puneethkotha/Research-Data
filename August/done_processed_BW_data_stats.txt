@@ -1,0 +1,22 @@
+BW_data.csv Processing Statistics
+================================
+
+Total Records: 22
+
+Language Distribution:
+- English (en): 22 records (100.0%)
+
+Entity Type Distribution:
+- Company: 16 records (72.7%)
+- Individual: 4 records (18.2%)
+- Government: 2 records (9.1%)
+
+Corrections Made:
+- BOTSWANA POWER CORPORATION: company → government
+
+Notes:
+- 100% English language environment
+- Primarily corporate entities with some individual names
+- Two government entities: BOTSWANA MEAT COMMISSION and BOTSWANA POWER CORPORATION
+- One family firm identified: CHOPPIES ENTERPRISES LIMITED
+- BOTSWANA POWER CORPORATION is a state-owned utility, hence government entity

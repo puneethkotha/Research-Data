@@ -1,0 +1,19 @@
+Language Distribution:
+- Arabic (ar): 1 entry
+- French (fr): 5 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 4 entries
+- Government Entities: 0 entries
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 6
+
+Notes:
+- French is the official language of Gabon
+- One Arabic name reflecting the diverse population
+- Two individuals identified with typical names
+- French business terminology used: S.A./SA (Société Anonyme)
+- All classifications have been verified and are correct

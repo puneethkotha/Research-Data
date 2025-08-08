@@ -1,0 +1,17 @@
+Language Distribution:
+- English (en): 7 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 7 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 7
+
+Notes:
+- All entries are in English, which is the official language of Saint Lucia
+- All entries are companies, reflecting Saint Lucia's business environment
+- Several financial institutions and holding companies identified
+- All classifications have been verified and are correct

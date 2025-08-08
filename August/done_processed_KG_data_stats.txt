@@ -1,0 +1,23 @@
+KG_data.csv Processing Statistics
+================================
+
+Total Records: 15
+
+Language Distribution:
+- Russian (ru): 12 records (80.0%)
+- English (en): 3 records (20.0%)
+
+Entity Type Distribution:
+- Company: 10 records (66.7%)
+- Government: 3 records (20.0%)
+- Family Firm: 2 records (13.3%)
+
+Corrections Made:
+- None - all classifications were correct
+
+Notes:
+- Primarily Russian language environment with some English
+- Three government entities: FOND PO UPRAVLENIYU GOSUDARSTVENNYM IMUSHCHESTVOM, MINISTERSTVO GOSSUDARSTVENNOGO IMUSHCHESTV KR, KYRGYZSTAN
+- Two family firms identified: DASTAN TRANSNATSIONALNAYA KORPORATSIYA OAO, CHAKANG ES OPEN JOINT STOCK COMPANY
+- Many Russian company names with "OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU" (Limited Liability Company)
+- No individual entities in this dataset

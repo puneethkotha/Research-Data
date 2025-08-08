@@ -1,0 +1,21 @@
+AF_data.csv Processing Statistics
+================================
+
+Total Records: 4
+
+Language Distribution:
+- Arabic/Persian (ar): 2 records (50.0%)
+- English (en): 2 records (50.0%)
+
+Entity Type Distribution:
+- Individual: 2 records (50.0%)
+- Company: 2 records (50.0%)
+
+Corrections Made:
+- None required
+
+Notes:
+- Afghan names are in Arabic/Persian script transliterated to English
+- Two individuals with traditional Afghan names
+- Two companies with English names (one Norwegian, one Russian joint venture)
+- Small sample size reflects limited data availability for Afghanistan

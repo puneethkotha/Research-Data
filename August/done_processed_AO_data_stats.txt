@@ -1,0 +1,25 @@
+AO_data.csv Processing Statistics
+================================
+
+Total Records: 27
+
+Language Distribution:
+- Portuguese (pt): 18 records (66.7%)
+- English (en): 9 records (33.3%)
+
+Entity Type Distribution:
+- Company: 16 records (59.3%)
+- Family Firm: 5 records (18.5%)
+- Government: 4 records (14.8%)
+- Individual: 2 records (7.4%)
+
+Corrections Made:
+- None required
+
+Notes:
+- Predominantly Portuguese-speaking country with Portuguese business entities
+- Portuguese legal suffixes: SA, S.A., LDA, LIMITADA, SGPS
+- Family firms identified by personal names in company titles
+- Government entities include ministries and state banks
+- English companies operating in Angola
+- One individual: PREBUILD SGPS (likely a holding company)

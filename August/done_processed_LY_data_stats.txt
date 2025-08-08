@@ -1,0 +1,27 @@
+Language Distribution:
+- Arabic (ar): 12 entries
+- English (en): 11 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 4 entries
+- Government Entities: 7 entries
+- Individuals: 12 entries
+- Family Firms: 0 entries
+
+Total Entries: 23
+
+Notes:
+- Twelve Arabic names reflecting Libya's local population
+- Eleven English entries for government entities and companies
+- Seven government entities identified:
+  * MINISTRY OF ELECTRICITY AND RENEWABLE ENERGY
+  * LIBYAN ARAB JAMAHIRIYA
+  * LIBYAN INVESTMENT AUTHORITY
+  * LIBYAN POST, TELECOMMUNICATION AND INFORMATION TECHNOLOGY COMPANY
+  * LIBYAN ARAB FOREIGN INVESTMENT COMPANY
+  * CENTRAL BANK OF LIBYA
+  * LIBYA GOVT
+- Two corrections made: LIBYA HOLDINGS GROUP LTD and ORKILA HOLDINGS S.A.L changed from family_firm to company
+- English business terminology used: LTD, S.A.L
+- All classifications have been verified and corrected where necessary

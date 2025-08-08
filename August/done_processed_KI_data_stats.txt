@@ -1,0 +1,18 @@
+Language Distribution:
+- French (fr): 1 entry
+- Russian (ru): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 2 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 2
+
+Notes:
+- One French company reflecting historical connections
+- One Russian company with typical Russian business terminology: KOMMERCHESKAYA KOMPANIYA (commercial company)
+- Both entries are international companies operating in Kiribati
+- All classifications have been verified and are correct

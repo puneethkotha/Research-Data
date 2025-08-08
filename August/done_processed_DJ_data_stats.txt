@@ -1,0 +1,19 @@
+Language Distribution:
+- Arabic (ar): 2 entries
+- French (fr): 2 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 1 entry
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 4
+
+Notes:
+- Two Arabic names reflecting the local population
+- Two French entries reflecting Djibouti's colonial history and official language
+- One government entity: GOUVERNEMENT DE LA REPUBLIQUE DE DJIBOUTI
+- French business terminology used: SARL (Société à Responsabilité Limitée)
+- All classifications have been verified and are correct

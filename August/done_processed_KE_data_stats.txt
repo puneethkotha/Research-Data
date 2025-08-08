@@ -1,0 +1,24 @@
+KE_data.csv Processing Statistics
+================================
+
+Total Records: 116
+
+Language Distribution:
+- English (en): 116 records (100.0%)
+
+Entity Type Distribution:
+- Company: 113 records (97.4%)
+- Individual: 2 records (1.7%)
+- Government: 1 record (0.9%)
+
+Corrections Made:
+- None - all classifications were correct
+
+Notes:
+- 100% English language environment
+- Very high concentration of corporate entities (97.4%)
+- Two government entities: KENYA and NATIONAL TREASURY KENYA
+- Two individuals: MOHAMED HASSANALI JANMOHAMED, JIBRIL ABDI RASHID HOMAMUD, MR. ASHIT KUMAR LAL DOSHTI
+- Strong presence of banking, insurance, and investment companies
+- Many holding companies and investment vehicles
+- No family firms identified in this dataset

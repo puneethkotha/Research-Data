@@ -1,0 +1,24 @@
+BB_data.csv Processing Statistics
+================================
+
+Total Records: 57
+
+Language Distribution:
+- English (en): 55 records (96.5%)
+- Russian (ru): 1 record (1.8%)
+- Chinese (zh): 1 record (1.8%)
+
+Entity Type Distribution:
+- Company: 57 records (100.0%)
+
+Corrections Made:
+- None required
+
+Notes:
+- Barbados is predominantly English-speaking with English business entities
+- English companies with legal suffixes: LTD, LIMITED, INC, CORPORATION, SRL
+- One Russian company with "MEZHDUNARODNAYA KOMMERCHESKAYA KOMPANIYA" prefix
+- One Chinese company with "YOU XIAN GONG SI" (有限公司) suffix
+- Typical offshore jurisdiction with international companies
+- Many companies have "(BARBADOS)" in their names indicating local registration
+- No individuals, family firms, or government entities in this dataset

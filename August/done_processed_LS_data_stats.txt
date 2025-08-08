@@ -1,0 +1,19 @@
+Language Distribution:
+- English (en): 3 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 1 entry
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 3
+
+Notes:
+- All entries are in English, which is the official language of Lesotho
+- One individual identified: MR JOSEPH MAKAMBA BUSHA
+- One government entity: LESOTHO NATIONAL DEVELOPMENT CORPORATION
+- One company: SEKHARUME HOLDINGS (PTY) LTD
+- English business terminology used: PTY (Proprietary Limited)
+- All classifications have been verified and are correct

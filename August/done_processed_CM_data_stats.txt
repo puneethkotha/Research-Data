@@ -1,0 +1,20 @@
+Language Distribution:
+- French (fr): 12 entries
+- English (en): 2 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 8 entries
+- Government Entities: 0 entries
+- Individuals: 6 entries
+- Family Firms: 0 entries
+
+Total Entries: 14
+
+Notes:
+- French is the official language of Cameroon
+- Two English entries are international companies
+- Six individuals identified with typical Cameroonian names
+- French business terminology used: SARL (Société à Responsabilité Limitée)
+- INTERNATIONAL FEDERATION OF RED CROSS AND RED CRESCENT SOCIETIES is classified as company (international NGO)
+- All classifications have been verified and are correct

@@ -1,0 +1,16 @@
+Language Distribution:
+- English (en): 2 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 2 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 2
+
+Notes:
+- All entries are in English, which is the official language of Gambia
+- One correction made: PRINTING SOFTWEAR EUROPE changed from family_firm to company (the name suggests a software/printing company, not necessarily a family firm)
+- All classifications have been verified and corrected where necessary

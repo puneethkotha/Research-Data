@@ -1,0 +1,22 @@
+BF_data.csv Processing Statistics
+================================
+
+Total Records: 4
+
+Language Distribution:
+- French (fr): 4 records (100.0%)
+
+Entity Type Distribution:
+- Individual: 4 records (100.0%)
+
+Corrections Made:
+- None required
+
+Notes:
+- Burkina Faso is a French-speaking country with French names
+- All entities are individuals with French/Arabic names
+- Duplicate entry for ANTOINE BAAKLINI with different IDs
+- RABIH AZAR appears to be an Arabic name
+- KOUDIBI ZONGO appears to be a local African name
+- No companies, family firms, or government entities in this dataset
+- Small sample size reflects limited data availability for Burkina Faso

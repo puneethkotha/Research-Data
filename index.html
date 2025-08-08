@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Data</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Research Data</h1>
+            <p>Parent entity classification analysis</p>
+        </header>
+
+        <main>
+            <div class="country-browser">
+                <div class="search-bar">
+                    <input type="text" id="search" placeholder="Search countries..." />
+                </div>
+
+                <div class="country-list" id="countryList">
+                    <!-- Countries will be loaded here -->
+                </div>
+            </div>
+
+            <div class="country-viewer" id="countryViewer" style="display: none;">
+                <div class="viewer-header">
+                    <button class="back-btn" onclick="closeViewer()">← Back</button>
+                    <h2 id="viewerTitle"></h2>
+                </div>
+                
+                <div class="viewer-content">
+                    <div class="stats-section">
+                        <h3>Statistics</h3>
+                        <div id="statsContent" class="stats-container">
+                            <!-- Stats visualization will be loaded here -->
+                        </div>
+                    </div>
+                    
+                    <div class="data-section">
+                        <h3>Data</h3>
+                        <div id="csvContent" class="csv-container">
+                            <!-- CSV data will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

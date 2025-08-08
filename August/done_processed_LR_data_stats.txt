@@ -1,0 +1,19 @@
+Language Distribution:
+- English (en): 64 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 62 entries
+- Government Entities: 0 entries
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 64
+
+Notes:
+- All entries are in English, which is the official language of Liberia
+- Two individuals identified: ALLIEU VARNEY KAMARA, LUQMAN ALI ALSHETWI
+- Sixty-two companies identified, many in maritime and shipping industries
+- Several companies use international business terminology: S.A. (Société Anonyme), INC, LTD, CORP
+- Many companies appear to be international businesses using Liberia as a registration location
+- All classifications have been verified and are correct

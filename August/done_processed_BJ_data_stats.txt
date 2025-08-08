@@ -1,0 +1,17 @@
+Language Distribution:
+- French (fr): 6 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 0 entries
+- Individuals: 5 entries
+- Family Firms: 0 entries
+
+Total Entries: 6
+
+Notes:
+- All entries are in French, which is the official language of Benin
+- Five individuals identified with typical Beninese names
+- BENIN TELECOMS INFRASTRUCTURES SA uses French business terminology ("SA" = Société Anonyme)
+- All classifications have been verified and are correct

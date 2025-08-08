@@ -1,0 +1,23 @@
+DM_data.csv Processing Statistics
+================================
+
+Total Records: 38
+
+Language Distribution:
+- Russian (ru): 22 records (57.9%)
+- English (en): 15 records (39.5%)
+- German (de): 1 record (2.6%)
+
+Entity Type Distribution:
+- Company: 35 records (92.1%)
+- Family Firm: 3 records (7.9%)
+
+Corrections Made:
+- None - all classifications were correct
+
+Notes:
+- Primarily Russian and English language environment
+- Very high concentration of corporate entities (92.1%)
+- Three family firms identified: BRACKEN ENTERPRISES LTD, OLTA GROUP LTD
+- Many Russian company names transliterated into English
+- All entities are business-related, no government or individual entities

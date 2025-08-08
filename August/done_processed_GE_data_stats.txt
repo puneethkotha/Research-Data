@@ -1,0 +1,27 @@
+GE_data.csv Processing Statistics
+================================
+
+Total Records: 194
+
+Language Distribution:
+- Georgian (ka): 120 records (61.9%)
+- English (en): 60 records (30.9%)
+- Russian (ru): 1 record (0.5%)
+- Unknown: 13 records (6.7%)
+
+Entity Type Distribution:
+- Individual: 85 records (43.8%)
+- Company: 95 records (49.0%)
+- Government: 13 records (6.7%)
+- Family Firm: 1 record (0.5%)
+
+Corrections Made:
+- MINISTRY GUSEINOV: government → individual
+
+Notes:
+- Primarily Georgian language environment with significant English presence
+- Good balance between individuals and companies
+- Thirteen government entities including municipalities, ministries, and state agencies
+- One family firm identified: MY FAMILY CLINIC
+- "MINISTRY GUSEINOV" is a person's name, not a government ministry
+- Many Georgian names follow typical patterns (-vili, -dze, -shvili suffixes)

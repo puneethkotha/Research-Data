@@ -1,0 +1,17 @@
+Language Distribution:
+- French (fr): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 1
+
+Notes:
+- Single entry in French, which is one of the official languages of Comoros
+- PROMIGAS SA is a company name
+- French business terminology used: SA (Société Anonyme)
+- Classification has been verified and is correct

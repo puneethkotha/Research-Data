@@ -1,0 +1,2 @@
+# Python dependencies for Research Data Web Application
+# No external dependencies required - uses only Python standard library

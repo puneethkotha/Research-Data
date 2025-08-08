@@ -1,0 +1,18 @@
+Language Distribution:
+- Spanish (es): 16 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 16 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 16
+
+Notes:
+- All entries are in Spanish, which is the official language of Guatemala
+- All entries are companies, reflecting Guatemala's business environment
+- Spanish business terminology used: S.A./SA (Sociedad Anónima), LTDA (Limitada)
+- Several financial institutions and distributors identified
+- All classifications have been verified and are correct

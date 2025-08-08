@@ -1,0 +1,19 @@
+Language Distribution:
+- English (en): 1 entry
+- French (fr): 2 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 3 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 3
+
+Notes:
+- One English entry for an international company
+- Two French entries reflecting Haiti's official language
+- French business terminology used: SA (Société Anonyme)
+- All entries are financial institutions/banks
+- All classifications have been verified and are correct

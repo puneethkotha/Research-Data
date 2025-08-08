@@ -1,0 +1,22 @@
+Language Distribution:
+- Russian (ru): 3 entries
+- Mongolian (mn): 7 entries
+- English (en): 9 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 9 entries
+- Government Entities: 1 entry
+- Individuals: 9 entries
+- Family Firms: 0 entries
+
+Total Entries: 19
+
+Notes:
+- Three Russian companies with typical Russian business terminology: KOMPANIYA S OGRANICHENNOI OTVETSTVENNOSTYU, AKTSIONERNAYA KOMPANIYA
+- Seven Mongolian names reflecting the local population
+- Nine English entries for companies, individuals, and government
+- One government entity: MONGOLIA (referring to the country)
+- Three corrections made: TENGER FINANCIAL GROUP LLC, BODI INTERNATIONAL LLC, and ALTAN TARIA JOINT STOCK COMPANY changed from family_firm to company
+- English business terminology used: LLC (Limited Liability Company), JOINT STOCK COMPANY, CO.
+- All classifications have been verified and corrected where necessary

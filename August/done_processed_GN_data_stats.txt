@@ -1,0 +1,18 @@
+Language Distribution:
+- Arabic (ar): 1 entry
+- Portuguese (pt): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 0 entries
+- Government Entities: 0 entries
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 2
+
+Notes:
+- Two individuals identified with diverse linguistic backgrounds
+- One Arabic name reflecting the local population
+- One Portuguese name reflecting historical connections
+- All classifications have been verified and are correct

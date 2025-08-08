@@ -1,0 +1,21 @@
+Language Distribution:
+- Amharic (am): 6 entries
+- English (en): 8 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 6 entries
+- Government Entities: 3 entries
+- Individuals: 6 entries
+- Family Firms: 0 entries
+
+Total Entries: 14
+
+Notes:
+- Six Amharic names reflecting Ethiopia's local population
+- Eight English entries for companies and government entities
+- Three government entities:
+  * GOVERNMENT OF ETHIOPIA (appears twice)
+  * PUBLIC FINANCIAL ENTERPRISES SUPERVISING AGENCY
+- English business terminology used: PLC (Public Limited Company), S.C. (Share Company)
+- All classifications have been verified and are correct

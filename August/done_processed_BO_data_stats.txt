@@ -1,0 +1,22 @@
+BO_data.csv Processing Statistics
+================================
+
+Total Records: 22
+
+Language Distribution:
+- Spanish (es): 22 records (100.0%)
+
+Entity Type Distribution:
+- Company: 18 records (81.8%)
+- Government: 3 records (13.6%)
+- Family Firm: 1 record (4.5%)
+
+Corrections Made:
+- EKAFIN: individual → company
+
+Notes:
+- 100% Spanish language environment
+- Primarily investment and holding companies
+- Several government entities including national treasury and state enterprises
+- One family firm identified: CORPORACION DE INVERSIONES B&S S.A.
+- "EKAFIN" appears to be a company name, not an individual

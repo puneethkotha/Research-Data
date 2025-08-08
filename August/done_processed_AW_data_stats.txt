@@ -1,0 +1,21 @@
+AW_data.csv Processing Statistics
+================================
+
+Total Records: 6
+
+Language Distribution:
+- English (en): 5 records (83.3%)
+- Dutch (nl): 1 record (16.7%)
+
+Entity Type Distribution:
+- Company: 6 records (100.0%)
+
+Corrections Made:
+- None required
+
+Notes:
+- Aruba is a Dutch Caribbean territory with English and Dutch business entities
+- English companies with legal suffixes: CORPORATION, LIMITED, AVV
+- Dutch company with N.V. (Naamloze Vennootschap) suffix
+- Typical offshore jurisdiction with international companies
+- No individuals, family firms, or government entities in this dataset

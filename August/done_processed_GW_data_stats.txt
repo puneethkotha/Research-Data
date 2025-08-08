@@ -1,0 +1,18 @@
+Language Distribution:
+- Portuguese (pt): 2 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 2 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 2
+
+Notes:
+- All entries are in Portuguese, which is the official language of Guinea-Bissau
+- Both entries are international companies
+- Portuguese business terminology used: SA (Sociedade Anónima)
+- One company uses SARL (Société à Responsabilité Limitée) which is French terminology but commonly used in Portuguese-speaking countries
+- All classifications have been verified and are correct

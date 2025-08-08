@@ -1,0 +1,20 @@
+Language Distribution:
+- Korean (ko): 1 entry
+- English (en): 2 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 1 entry
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 3
+
+Notes:
+- One Korean name reflecting international connections
+- Two English entries for government and company entities
+- One government entity: MYANMAR (UNION OF)
+- One individual identified: KIN YU DO
+- One company: FIRST MYANMAR INVESTMENT CO., LTD.
+- All classifications have been verified and are correct

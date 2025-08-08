@@ -1,0 +1,19 @@
+Language Distribution:
+- French (fr): 3 entries
+- Arabic (ar): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 1 entry
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 4
+
+Notes:
+- French is the official language of Republic of Congo
+- One Arabic name (ALI DAHER) reflecting the diverse population
+- SOCIÉTÉ NATIONALE DES PÉTROLES DU CONGO S.A. is correctly identified as a government entity (national oil company)
+- Two individuals identified with typical names
+- All classifications have been verified and are correct

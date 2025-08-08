@@ -1,0 +1,28 @@
+Language Distribution:
+- Albanian (sq): 9 entries
+- English (en): 8 entries
+- Russian (ru): 6 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 20 entries
+- Government Entities: 5 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 24
+
+Notes:
+- Albanian is the official language of Kosovo
+- English entries are typically international companies
+- Russian entries use typical Russian business terminology: KOMPANIYA, OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU
+- Five government entities identified:
+  * QEVERIA E REPUBLIKES SE KOSOVES (Government of Republic of Kosovo)
+  * QEVERIA E KOSOVES (Government of Kosovo)
+  * AGJENCIA KOSOVARE E MIREBESIMIT (Kosovo Agency for Good Governance)
+  * KOSOVO TRUST AGENCY
+  * KOSOVO (referring to the country)
+- One individual identified: CERKINAJ, DIAMANT
+- Three corrections made: MABETEX PROPERTIES SH.A., YLLI - BEC SH.P.K., and UDARNIKKOMERC changed from family_firm to company
+- Albanian business terminology used: SH.A. (Shoqëri me përgjegjësi të kufizuar), SH.P.K. (Shoqëri me përgjegjësi të kufizuar)
+- All classifications have been verified and corrected where necessary

@@ -1,0 +1,17 @@
+Language Distribution:
+- Spanish (es): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 1
+
+Notes:
+- Single entry in Spanish, which is the official language of Equatorial Guinea
+- ENVASADORA DE BATA S.A. is a company name
+- Spanish business terminology used: S.A. (Sociedad Anónima)
+- Classification has been verified and is correct

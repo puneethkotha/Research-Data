@@ -1,0 +1,20 @@
+Language Distribution:
+- French (fr): 4 entries
+- English (en): 3 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 5 entries
+- Government Entities: 1 entry
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 7
+
+Notes:
+- French entries reflect DRC's official language
+- English entries are typically international companies operating in DRC
+- Two individuals identified with typical names
+- One government entity: CONGO DEMOCRATIC GOVT
+- French business terminology used: SARL (Société à Responsabilité Limitée), SA (Société Anonyme)
+- All classifications have been verified and are correct

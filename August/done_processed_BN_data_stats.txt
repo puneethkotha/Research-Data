@@ -1,0 +1,19 @@
+Language Distribution:
+- English (en): 9 entries
+- Chinese (zh): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 9 entries
+- Government Entities: 1 entry
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 10
+
+Notes:
+- Most entries are in English, reflecting Brunei's business environment
+- One Chinese company name: WEN LAI DIAN NAO KE JI YOU XIAN GONG SI (Wen Lai Computer Technology Co., Ltd.)
+- BRUNEI INVESTMENT AGENCY is correctly identified as a government entity
+- Several companies use Malaysian business terminology (BHD, SDN BHD, BERHAD) reflecting regional business practices
+- All classifications have been verified and are correct

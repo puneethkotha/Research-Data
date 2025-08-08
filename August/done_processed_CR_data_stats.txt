@@ -1,0 +1,25 @@
+CR_data.csv Processing Statistics
+================================
+
+Total Records: 62
+
+Language Distribution:
+- Spanish (es): 35 records (56.5%)
+- English (en): 25 records (40.3%)
+- Russian (ru): 1 record (1.6%)
+- Unknown: 1 record (1.6%)
+
+Entity Type Distribution:
+- Company: 57 records (91.9%)
+- Government: 4 records (6.5%)
+- Individual: 1 record (1.6%)
+
+Corrections Made:
+- BANCO NACIONAL DE COSTA RICA: company → government
+
+Notes:
+- Primarily Spanish and English language environment
+- Very high concentration of corporate entities (91.9%)
+- Four government entities: COSTA RICA, BANCO NACIONAL DE COSTA RICA, INSTITUTO NACIONAL DE SEGUROS, INSTITUTO COSTARRICENSE DE ELECTRICIDAD
+- BANCO NACIONAL DE COSTA RICA is a state-owned bank, hence government entity
+- One unknown language entry: "3-101-635783" (appears to be an ID number)

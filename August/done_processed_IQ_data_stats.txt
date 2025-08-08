@@ -1,0 +1,31 @@
+IQ_data.csv Processing Statistics
+================================
+
+Total Records: 46
+
+Language Distribution:
+- Arabic (ar): 28 records (60.9%)
+- English (en): 18 records (39.1%)
+
+Entity Type Distribution:
+- Individual: 25 records (54.3%)
+- Company: 18 records (39.1%)
+- Government: 3 records (6.5%)
+
+Corrections Made:
+- AL BAYATI SABEHA ABDULKAREEM MOHAMMED: company → individual
+- MAJED AHMAD MOHMED T.: company → individual
+- AHMED SHIHAB SALMAN SALMAN: company → individual
+- LAYTH RASOOL JASIM AL-SALLAMI: company → individual
+- SHAKIR AHMAD RAHEEM AL SAMARRAEE: company → individual
+- MOHAMMED THABIT HUSSEIN HUSSEIN: company → individual
+- ABDULRAHMAN HAMEED JASIM AL- ALWANI: company → individual
+- SALAH ALDAIN NAYYEF KHALID HARPAH: company → individual
+
+Notes:
+- Primarily Arabic language environment with significant English presence
+- High proportion of individual names (54.3%)
+- Three government entities: MINISTRY OF TRANSPORTATION AND COMMUNICATION, KURDISTAN REGIONAL GOVERNMENT, GOVERNMENT OF IRAQ
+- Two family firms identified: AHMED SADEQ RAHEEM FAMILY, MR. HUSSAIN AL RUBAIEY FAMILY
+- Many Arabic names were incorrectly classified as companies - these are clearly individual names
+- Strong presence of banking and trading companies

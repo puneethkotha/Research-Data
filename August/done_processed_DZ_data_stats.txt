@@ -1,0 +1,25 @@
+DZ_data.csv Processing Statistics
+================================
+
+Total Records: 32
+
+Language Distribution:
+- Arabic (ar): 12 records (37.5%)
+- French (fr): 12 records (37.5%)
+- English (en): 8 records (25.0%)
+
+Entity Type Distribution:
+- Individual: 10 records (31.3%)
+- Company: 15 records (46.9%)
+- Government: 5 records (15.6%)
+- Family Firm: 2 records (6.3%)
+
+Corrections Made:
+- "ISSAD ,YASSINE,LYNDA,SALIM,MALIK ,OMAR REBRAB": company → family_firm
+
+Notes:
+- Mixed language environment with Arabic, French, and English
+- Good balance between individuals and companies
+- Five government entities including state-owned companies and national funds
+- Two family firms identified: SEKLLOULI family and REBRAB family
+- "ISSAD ,YASSINE,LYNDA,SALIM,MALIK ,OMAR REBRAB" is clearly a family group, not a company

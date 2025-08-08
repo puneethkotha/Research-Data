@@ -1,0 +1,18 @@
+Language Distribution:
+- Spanish (es): 8 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 7 entries
+- Government Entities: 1 entry
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 8
+
+Notes:
+- All entries are in Spanish, which is the official language of Honduras
+- One government entity: HONDURAS (referring to the country itself)
+- Spanish business terminology used: S.A./SA (Sociedad Anónima), S DE RL DE CV (Sociedad de Responsabilidad Limitada de Capital Variable), SA DE CV (Sociedad Anónima de Capital Variable)
+- Several financial institutions and investment companies identified
+- All classifications have been verified and are correct

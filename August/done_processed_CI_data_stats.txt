@@ -1,0 +1,25 @@
+CI_data.csv Processing Statistics
+================================
+
+Total Records: 32
+
+Language Distribution:
+- French (fr): 20 records (62.5%)
+- Arabic (ar): 7 records (21.9%)
+- English (en): 5 records (15.6%)
+
+Entity Type Distribution:
+- Individual: 15 records (46.9%)
+- Company: 12 records (37.5%)
+- Family Firm: 3 records (9.4%)
+- Government: 2 records (6.3%)
+
+Corrections Made:
+- WAI SHUN FREDERIC LIOUG LAM: company → individual
+
+Notes:
+- Primarily French language environment with Arabic and English names
+- High proportion of individual names (46.9%)
+- Three family firms identified: SIFCA S.A., MAS GROUP, YESHI GROUPE, FRAGECI S A
+- Two government entities: COTE D'IVOIRE and SOCIÉTÉ NATIONALE D'OPÉRATIONS PÉTROLIÈRES
+- "WAI SHUN FREDERIC LIOUG LAM" is clearly a person's name, not a company

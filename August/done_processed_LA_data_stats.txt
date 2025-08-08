@@ -1,0 +1,19 @@
+Language Distribution:
+- French (fr): 3 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 0 entries
+- Government Entities: 2 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 3
+
+Notes:
+- All entries are in French, reflecting Laos' colonial history
+- One individual identified: MME TUNGCHURUT MANISENG
+- Two government entities:
+  * ELECTRICITE DU LAOS (Laos Electricity)
+  * LAOS (referring to the country itself)
+- All classifications have been verified and are correct

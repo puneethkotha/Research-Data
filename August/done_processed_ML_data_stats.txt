@@ -1,0 +1,21 @@
+Language Distribution:
+- French (fr): 5 entries
+- Chinese (zh): 1 entry
+- English (en): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 1 entry
+- Individuals: 5 entries
+- Family Firms: 0 entries
+
+Total Entries: 7
+
+Notes:
+- Five French entries reflecting Mali's official language
+- One Chinese company: MA LI SHI YE GONG SI (Mali World Industry Company)
+- One English entry for the government entity
+- One government entity: GOVERNMENT OF MALI
+- Five individuals identified with typical Malian names
+- All classifications have been verified and are correct

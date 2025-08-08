@@ -1,0 +1,19 @@
+Language Distribution:
+- French (fr): 2 entries
+- Norwegian (no): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 2 entries
+- Government Entities: 0 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 3
+
+Notes:
+- French is the official language of Burundi, explaining the French context for local entities
+- OPTIMERA AS uses Norwegian business terminology ("AS" = Aksjeselskap)
+- BEDE BEDETSE is clearly an individual name
+- ECONET WIRELESS BURUNDI is a telecommunications company
+- All classifications have been verified and are correct

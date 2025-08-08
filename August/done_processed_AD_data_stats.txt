@@ -1,0 +1,26 @@
+AD_data.csv Processing Statistics
+================================
+
+Total Records: 28
+
+Language Distribution:
+- Catalan (ca): 22 records (78.6%)
+- English (en): 5 records (17.9%)
+- German (de): 1 record (3.6%)
+
+Entity Type Distribution:
+- Company: 24 records (85.7%)
+- Individual: 1 record (3.6%)
+- Family Firm: 2 records (7.1%)
+- Government: 2 records (7.1%)
+
+Corrections Made:
+- "AM INTERNATIONAL HOLDINGS LIMITED, S.L.": ca → en (English company name)
+
+Notes:
+- Andorra primarily uses Catalan language for business entities
+- Most entities are companies with Catalan legal suffixes (SA, SL, SLU, SAU)
+- Two family firms identified with English names
+- Two government entities: banking institutions
+- One German company (KOMP VEG KHOLDING GMBH) operating in Andorra
+- One individual: JOAN TORRES PUIG (Catalan name)

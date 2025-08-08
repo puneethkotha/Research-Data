@@ -1,0 +1,26 @@
+Language Distribution:
+- French (fr): 40 entries
+- English (en): 36 entries
+- Italian (it): 3 entries
+- Russian (ru): 3 entries
+- Portuguese (pt): 1 entry
+- German (de): 1 entry
+- Spanish (es): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 67 entries
+- Government Entities: 2 entries
+- Individuals: 16 entries
+- Family Firms: 0 entries
+
+Total Entries: 85
+
+Notes:
+- French is the official language of Monaco, explaining the high number of French entries
+- English entries reflect Monaco's international business environment
+- Two government entities: PRINCIPAUTÉ DE MONACO, SOCIETE MONEGASQUE INTERNATIONALE PORTUAIRE (S.M.I.P.)
+- Sixteen individuals identified with diverse linguistic backgrounds
+- French business terminology used: S.A.M. (Société Anonyme Monégasque), S.C.I. (Société Civile Immobilière), SARL
+- International business terminology used: S.A., LTD, INC, SCP
+- All classifications have been verified and are correct

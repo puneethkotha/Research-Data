@@ -1,0 +1,29 @@
+AZ_data.csv Processing Statistics
+================================
+
+Total Records: 33
+
+Language Distribution:
+- Azerbaijani (az): 15 records (45.5%)
+- English (en): 15 records (45.5%)
+- Russian (ru): 2 records (6.1%)
+- German (de): 1 record (3.0%)
+
+Entity Type Distribution:
+- Individual: 15 records (45.5%)
+- Company: 15 records (45.5%)
+- Government: 3 records (9.1%)
+
+Corrections Made:
+- SAMIR OMAROV: company → individual
+- MISIROV BAKHMAN DZHAVAD OGLY: company → individual
+- GASANOV RASIM MEZHDUN OGLY: company → individual
+- SADYGOV RASIM IBRAGIM OGLY: company → individual
+- NASIBOV ILGAR NARIMAN OGLY: company → individual
+- KERIMOV GUSEIN ARRAKHMAN OGLY: company → individual
+- AZERBAIJAN: individual → government
+
+Notes:
+- Azerbaijani names with "OGLY" suffix are patronymic indicators, indicating individuals
+- "AZERBAIJAN" refers to the country itself, hence government entity
+- Mixed language environment with English, Azerbaijani, Russian, and German company names

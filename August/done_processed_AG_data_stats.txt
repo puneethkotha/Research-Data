@@ -1,0 +1,19 @@
+AG_data.csv Processing Statistics
+================================
+
+Total Records: 4
+
+Language Distribution:
+- English (en): 4 records (100.0%)
+
+Entity Type Distribution:
+- Company: 4 records (100.0%)
+
+Corrections Made:
+- None required
+
+Notes:
+- All entities are English-language companies
+- Typical offshore jurisdiction with English legal suffixes (LTD, LIMITED)
+- No individuals, family firms, or government entities in this dataset
+- Small sample size typical for smaller Caribbean nations

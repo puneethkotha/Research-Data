@@ -1,0 +1,21 @@
+AI_data.csv Processing Statistics
+================================
+
+Total Records: 21
+
+Language Distribution:
+- English (en): 17 records (81.0%)
+- Russian (ru): 4 records (19.0%)
+
+Entity Type Distribution:
+- Company: 21 records (100.0%)
+
+Corrections Made:
+- None required
+
+Notes:
+- Typical offshore jurisdiction with predominantly English companies
+- Russian companies operating in Anguilla (likely for offshore purposes)
+- All entities are companies with various legal structures (LTD, INC, LLC)
+- No individuals, family firms, or government entities
+- Duplicate entry for EASTERN INVESTMENT GROUP HOLDING with different IDs

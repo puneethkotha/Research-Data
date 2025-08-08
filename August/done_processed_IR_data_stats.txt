@@ -1,0 +1,27 @@
+IR_data.csv Processing Statistics
+================================
+
+Total Records: 109
+
+Language Distribution:
+- Persian/Farsi (fa): 45 records (41.3%)
+- English (en): 60 records (55.0%)
+- Russian (ru): 1 record (0.9%)
+- Unknown: 3 records (2.8%)
+
+Entity Type Distribution:
+- Company: 70 records (64.2%)
+- Individual: 25 records (22.9%)
+- Government: 10 records (9.2%)
+- Family Firm: 4 records (3.7%)
+
+Corrections Made:
+- None - all classifications were correct
+
+Notes:
+- Primarily English and Persian language environment
+- High concentration of corporate entities (64.2%)
+- Ten government entities including ministries, state companies, and pension funds
+- Four family firms identified: CIROUS KABIRI FAMILY, AKBARI FAMILY, MIRZA KHAN AGHAZADEH BOGHCHI, PIRZADEH FAMILY, and others
+- Many state-owned enterprises and government-linked companies
+- Strong presence of oil, petrochemical, and banking industries

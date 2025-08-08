@@ -1,0 +1,19 @@
+Language Distribution:
+- Khmer (km): 7 entries
+- English (en): 4 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 4 entries
+- Government Entities: 0 entries
+- Individuals: 7 entries
+- Family Firms: 0 entries
+
+Total Entries: 11
+
+Notes:
+- Seven Khmer names reflecting Cambodia's local population
+- Four English entries for international companies and banks
+- English business terminology used: PLC (Public Limited Company)
+- Several individuals identified with typical Cambodian names
+- All classifications have been verified and are correct
