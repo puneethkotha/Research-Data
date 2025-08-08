@@ -14,14 +14,20 @@
             <p>Parent entity classification analysis</p>
         </header>
 
-        <!-- Updates Notification Section -->
-        <div class="updates-notification" id="updatesNotification">
-            <div class="notification-header">
-                <h3>📢 Recent Updates</h3>
-                <button class="close-notification" onclick="closeNotification()">×</button>
-            </div>
-            <div class="notification-content" id="notificationContent">
-                <!-- Updates will be loaded here -->
+        <!-- Updates Bell Icon -->
+        <div class="updates-bell" id="updatesBell">
+            <button class="bell-button" onclick="toggleUpdates()">
+                🔔
+                <span class="notification-badge" id="notificationBadge">3</span>
+            </button>
+            <div class="updates-dropdown" id="updatesDropdown">
+                <div class="dropdown-header">
+                    <h3>📢 Recent Updates</h3>
+                    <button class="close-dropdown" onclick="closeUpdates()">×</button>
+                </div>
+                <div class="dropdown-content" id="notificationContent">
+                    <!-- Updates will be loaded here -->
+                </div>
             </div>
         </div>
 

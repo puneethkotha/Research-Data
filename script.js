@@ -620,6 +620,16 @@ Notes:
         const notificationContent = document.getElementById('notificationContent');
         if (!notificationContent) return;
 
+        // Count new updates for badge
+        const newUpdatesCount = updates.filter(update => update.isNew).length;
+        const badge = document.getElementById('notificationBadge');
+        if (badge) {
+            badge.textContent = newUpdatesCount;
+            if (newUpdatesCount === 0) {
+                badge.style.display = 'none';
+            }
+        }
+
         let updatesHTML = '';
         updates.forEach(update => {
             const newClass = update.isNew ? 'new' : '';
@@ -644,13 +654,31 @@ function closeViewer() {
     app.showBrowser();
 }
 
-// Global function to close notification
-function closeNotification() {
-    const notification = document.getElementById('updatesNotification');
-    if (notification) {
-        notification.style.display = 'none';
+// Global function to toggle updates dropdown
+function toggleUpdates() {
+    const dropdown = document.getElementById('updatesDropdown');
+    if (dropdown) {
+        dropdown.classList.toggle('show');
     }
 }
+
+// Global function to close updates dropdown
+function closeUpdates() {
+    const dropdown = document.getElementById('updatesDropdown');
+    if (dropdown) {
+        dropdown.classList.remove('show');
+    }
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const bell = document.getElementById('updatesBell');
+    const dropdown = document.getElementById('updatesDropdown');
+    
+    if (bell && dropdown && !bell.contains(event.target)) {
+        dropdown.classList.remove('show');
+    }
+});
 
 // Initialize the application
 const app = new CountryDataViewer();
