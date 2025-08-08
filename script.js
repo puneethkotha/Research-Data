@@ -236,16 +236,21 @@ class CountryDataViewer {
     async loadFileContent(filePath) {
         try {
             // Try to fetch real file content from API
+            console.log(`Loading file: ${filePath}`);
             const response = await fetch(`/api/file-content?path=${encodeURIComponent(filePath)}`);
             if (response.ok) {
                 const data = await response.json();
+                console.log(`Successfully loaded file: ${filePath}, content length: ${data.content.length}`);
                 return data.content;
+            } else {
+                console.error(`Failed to load file: ${filePath}, status: ${response.status}`);
             }
         } catch (error) {
             console.warn('API not available, using mock data:', error);
         }
         
         // Fallback to mock data
+        console.log(`Using mock data for: ${filePath}`);
         return this.generateMockContent(filePath);
     }
 
@@ -355,6 +360,8 @@ Notes:
     }
 
     displayStatsWithVisualization(content, chartContainer, statsContainer, countryCode) {
+        console.log(`Displaying stats for ${countryCode}:`, content.substring(0, 200) + '...');
+        
         // Parse stats content to extract data
         const stats = this.parseStatsContent(content);
         
@@ -387,6 +394,8 @@ Notes:
         let inLanguageSection = false;
         let inEntitySection = false;
         
+        console.log('Parsing stats content:', content.substring(0, 200) + '...');
+        
         lines.forEach(line => {
             const trimmedLine = line.trim();
             
@@ -400,12 +409,14 @@ Notes:
             if (trimmedLine === 'Language Distribution:') {
                 inLanguageSection = true;
                 inEntitySection = false;
+                console.log('Found Language Distribution section');
                 return;
             }
             
             if (trimmedLine === 'Entity Type Distribution:') {
                 inLanguageSection = false;
                 inEntitySection = true;
+                console.log('Found Entity Type Distribution section');
                 return;
             }
             
@@ -417,6 +428,7 @@ Notes:
                     const languageCode = langMatch[2].trim();
                     const count = parseInt(langMatch[3]);
                     stats.languages[languageName] = count;
+                    console.log(`Found language: ${languageName} (${languageCode}): ${count}`);
                 }
             }
             
@@ -427,10 +439,12 @@ Notes:
                     const entityType = entityMatch[1].trim();
                     const count = parseInt(entityMatch[2]);
                     stats.entityTypes[entityType] = count;
+                    console.log(`Found entity type: ${entityType}: ${count}`);
                 }
             }
         });
         
+        console.log('Parsed stats:', stats);
         return stats;
     }
 
