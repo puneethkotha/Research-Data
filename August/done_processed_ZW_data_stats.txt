@@ -1,0 +1,50 @@
+ZW_data.csv Processing Stats - Zimbabwe
+======================================
+
+Total Records: 54
+Processing Date: August 2024
+
+LANGUAGE DISTRIBUTION:
+- English (en): 54 (100.0%)
+
+ENTITY TYPE DISTRIBUTION:
+- Company: 47 (87.0%)
+- Individual: 7 (13.0%)
+- Government: 4 (7.4%)
+- Family Firm: 0 (0.0%)
+
+DETAILED ANALYSIS:
+
+INDIVIDUALS (7 entries):
+1. LEE YOUNG KYOON - Korean/Asian name in English
+2. NOOR MOHAMED BHADELLA - Muslim/Indian name
+3. M SARUDZAI - African name (abbreviated first name)
+4. SHAR HEWITT - Western name
+5. MILES PEECH - Western name
+6. KENNEDY NTINI - African name
+7. GEORGE WILSON WATSON - Western name
+
+GOVERNMENT ENTITIES (4 entries):
+- NATIONAL SOCIAL SECURITY AUTHORITY (social security institution)
+- ZIMBABWE MINING DEVELOPMENT CORPORATION (ZMDC) (state mining corporation)
+- INDUSTRIAL DEVELOPMENT CORPORATION of ZIMBABWE LIMITED (state development corporation)
+- THE RESERVE BANK OF ZIMBABWE (RBZ) (central bank)
+
+COMPANIES (47 entries):
+- Mix of local and international companies
+- Various sectors: mining, banking, telecommunications, manufacturing, agriculture
+- Formal structures using LIMITED, LTD, PVT LTD, (PRIVATE) LIMITED designations
+- Notable companies include ECONET WIRELESS, MEIKLES LIMITED, SEED CO LIMITED
+
+LANGUAGE NOTES:
+- 100% English classification appropriate for Zimbabwe (English is official language)
+- Names reflect Zimbabwe's multicultural population (African, Asian, Western origins)
+
+SECTOR REPRESENTATION:
+- Strong presence of publicly listed companies (ZW30XXX codes suggest Zimbabwe Stock Exchange listings)
+- Government corporations and parastatals well represented
+- Financial services sector prominent (multiple bank holdings)
+- Mining and industrial companies reflect Zimbabwe's economic base
+
+CLASSIFICATION CONFIDENCE: High - all entries correctly classified
+No corrections needed

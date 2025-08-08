@@ -1,0 +1,17 @@
+Language Distribution:
+- Tajik (tg): 6 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 0 entries
+- Government Entities: 0 entries
+- Individuals: 6 entries
+- Family Firms: 0 entries
+
+Total Entries: 6
+
+Notes:
+- Six Tajik individuals with typical Tajik names
+- Reflects Tajikistan's Tajik-speaking population
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

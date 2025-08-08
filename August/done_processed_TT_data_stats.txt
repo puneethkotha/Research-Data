@@ -1,0 +1,21 @@
+Language Distribution:
+- English (en): 15 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 13 entries
+- Government Entities: 0 entries
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 15
+
+Notes:
+- Two English individuals: EGGS TRAUT, KHLIP PHARE WOECHIN
+- Thirteen English companies reflecting Trinidad and Tobago's English-speaking business environment
+- Strong presence of financial and insurance companies
+- Common business suffixes: LIMITED, LTD
+- Typical business terms: HOLDINGS, FINANCIAL, INSURANCE, INTERNATIONAL
+- Reflects Trinidad and Tobago's English-speaking business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

@@ -1,0 +1,23 @@
+Language Distribution:
+- Spanish (es): 3 entries
+- English (en): 3 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 5 entries
+- Government Entities: 0 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 6
+
+Notes:
+- One English individual: MR RAFIU EBITI
+- Three Spanish companies reflecting Nicaragua's Spanish-speaking business environment
+- Three English companies reflecting international business presence
+- Common Spanish business suffixes: S.A., SOCIEDAD ANONIMA
+- Common English business suffixes: LIMITED, LP
+- Typical business terms: INVERSION, BANCO, SUGAR ESTATES
+- Reflects Nicaragua's bilingual business environment (Spanish and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

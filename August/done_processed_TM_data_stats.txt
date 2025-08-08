@@ -1,0 +1,22 @@
+Language Distribution:
+- Turkmen (tk): 3 entries
+- Russian (ru): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 1 entry
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 4
+
+Notes:
+- Two Turkmen individuals: ORAZOV GUVANCHMYRAT, SEIDOV SEID
+- One Turkmen company: AZIYA HIZMATDAS SIRKETI
+- One Russian government entity: GOSUDARSTVENNOE PREDPRIYATIE GOSUDARSTVENNOE PREDPRIYATIE TURKMENINTORG MINISTERSTVA TORGOVLI I VNESHNEEKONOMICHESKIKH S
+- Common Turkmen business terms: SIRKETI, HIZMATDAS
+- Common Russian government terms: GOSUDARSTVENNOE PREDPRIYATIE, MINISTERSTVA
+- Reflects Turkmenistan's multilingual environment (Turkmen and Russian)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

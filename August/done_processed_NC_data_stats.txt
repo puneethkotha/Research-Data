@@ -1,0 +1,20 @@
+Language Distribution:
+- Norwegian (no): 2 entries
+- French (fr): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 2 entries
+- Government Entities: 0 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 3
+
+Notes:
+- One French individual: M. CLAUDE, ANTOINE, PATRICE MAGNE
+- Two Norwegian companies with "AS" suffix (Aksjeselskap - limited company)
+- Reflects New Caledonia's colonial history (French) and business environment
+- Common Norwegian business suffix: AS
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

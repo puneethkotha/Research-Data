@@ -1,0 +1,22 @@
+Language Distribution:
+- English (en): 18 entries
+- Arabic (ar): 4 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 18 entries
+- Government Entities: 0 entries
+- Individuals: 4 entries
+- Family Firms: 0 entries
+
+Total Entries: 22
+
+Notes:
+- Four Arabic individuals: ALMASSRI KAMAL M G, MR. OBAIDAH MOHAMMED AL MOHTASEB, MR. JAMAL MOHAMMED ABU ALIA, MR. MOHAMMED ALI YAHIA ZAHDA
+- Eighteen English companies reflecting Palestine's international business environment
+- Strong presence of pharmaceutical, banking, and real estate companies
+- Common business suffixes: PJSC, PLC, LTD, P.S.C, JSC
+- Typical business terms: PHARMACEUTICAL, BANK, REAL ESTATE, INVESTMENT, INSURANCE
+- Reflects Palestine's bilingual business environment (Arabic and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

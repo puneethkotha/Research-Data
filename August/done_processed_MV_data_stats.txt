@@ -1,0 +1,27 @@
+MV_data.csv Processing Stats - Maldives
+========================================
+
+Total Records: 5
+Processing Date: August 2024
+
+LANGUAGE DISTRIBUTION:
+- English (en): 5 (100.0%)
+
+ENTITY TYPE DISTRIBUTION:
+- Company: 4 (80.0%)
+- Government: 1 (20.0%)
+- Individual: 0 (0.0%)
+- Family Firm: 0 (0.0%)
+
+DETAILED ANALYSIS:
+1. CYPREA MARINE FOODS PVT LTD - Language: English (clear business terminology), Entity: Company (PVT LTD designation)
+2. FLAUER AILEND PRAIVET LIMITED - Language: English (misspelled but clearly English words), Entity: Company (LIMITED designation)
+3. CYPREA PRIVATE LIMITED - Language: English (standard business terminology), Entity: Company (PRIVATE LIMITED designation)
+4. MALDIVES - Language: English (country name), Entity: Government (national entity)
+5. UNIVERSAL ENTERPRISES PRIVATE LTD - Language: English (business terminology), Entity: Company (PRIVATE LTD designation)
+
+NOTES:
+- All entries are correctly classified
+- Row 2 contains misspellings but language detection is correct (English)
+- High confidence in all classifications
+- No corrections needed

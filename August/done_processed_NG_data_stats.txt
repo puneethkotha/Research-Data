@@ -1,0 +1,23 @@
+Language Distribution:
+- English (en): 83 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 78 entries
+- Government Entities: 4 entries
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 83
+
+Notes:
+- Two English individuals: FAYSAL NULL CAPTAN and MANUWA ADEDEJIUBA
+- Four government entities: FED HOUSING AUTHORITY, ASSET MANAGEMENT CORPORATION OF NIGERIA, BAYELSA STATE MINISTRY OF FINANCE INCORPORATED, NIGERIAN NATIONAL PETROLEUM CORPORATION
+- Seventy-eight companies reflecting Nigeria's diverse business environment
+- Strong presence of financial institutions (banks, insurance companies)
+- Notable companies include DANGOTE CEMENT PLC (appears twice), ACCESS BANK PLC, GUARANTY TRUST BANK PLC
+- Common business suffixes: PLC, LTD, LIMITED, CORPORATION
+- Typical business terms: HOLDINGS, GROUP, SERVICES, INVESTMENT, INSURANCE
+- Reflects Nigeria's English-speaking business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

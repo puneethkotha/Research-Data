@@ -1,0 +1,28 @@
+Language Distribution:
+- Chinese (zh): 10 entries
+- English (en): 8 entries
+- Portuguese (pt): 6 entries
+- French (fr): 1 entry
+- Arabic (ar): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 24 entries
+- Government Entities: 0 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 25
+
+Notes:
+- One Arabic individual: ENGINEER MOUSTAFA EL SAYED EBEID
+- Ten Chinese companies with "AO MEN" (Macau) prefix
+- Eight English companies reflecting international business presence
+- Six Portuguese companies reflecting Macau's colonial history
+- One French company: GROUPE BH
+- Corrections made:
+  * INDUSTRIAL AND COMMERCIAL BANK of CHINA (MACAU) LIMITED: changed from government to company
+  * MACAU INSURANCE CO. LTD: changed from government to company
+- Reflects Macau's multilingual business environment (Chinese, English, Portuguese, French, Arabic)
+- Common business terms: LIMITED, CO LTD, LDA, SA, GONG SI, XING
+- All other classifications verified and confirmed as accurate

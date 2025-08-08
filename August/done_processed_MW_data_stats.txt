@@ -1,0 +1,37 @@
+MW_data.csv Processing Stats - Malawi
+====================================
+
+Total Records: 15
+Processing Date: August 2024
+
+LANGUAGE DISTRIBUTION:
+- English (en): 15 (100.0%)
+
+ENTITY TYPE DISTRIBUTION:
+- Company: 11 (73.3%)
+- Government: 2 (13.3%)
+- Individual: 4 (26.7%)
+- Family Firm: 0 (0.0%)
+
+DETAILED ANALYSIS:
+1. FARUK ABUBAKAR TAYUB - Language: English (Arabic/Islamic names in English), Entity: Individual (three personal names)
+2. FLEMINGS KAPUNDA - Language: English (personal names), Entity: Individual (two personal names)
+3. SHOUKAT HUSSEIN - Language: English (personal names), Entity: Individual (two personal names)
+4. DATO' SRI NG AH CHAI - Language: English (Malaysian/Chinese honorific + name), Entity: Individual (honorific title + personal name)
+5. MEDHEALTH - Language: English (medical + health compound), Entity: Company (single word company name)
+6. MEDICAL AID SOCIETY OF MALAWI - Language: English (clear terminology), Entity: Company (organizational structure)
+7. OLD MUTUAL LIFE ASSURANCE COMPANY MALAWI LIMITED - Language: English (business terms), Entity: Company (company + limited)
+8. GOVERNMENT OF MALAWI - Language: English (government terminology), Entity: Government (explicit government entity)
+9. AHL GROUP LIMITED - Language: English (business terms), Entity: Company (group limited structure)
+10. GLOBE GROUP of COMPANIES - Language: English (business terms), Entity: Company (group of companies structure)
+11. MDC LIMITED - Language: English (business terms), Entity: Company (limited designation)
+12. FDH FINANCIAL HOLDINGS COMPANY LIMITED - Language: English (financial terms), Entity: Company (holdings company)
+13. PRESS CORPORATION LIMITED - Language: English (business terms), Entity: Company (corporation limited)
+14. RESERVE BANK OF MALAWI - Language: English (banking terms), Entity: Government (central bank institution)
+15. MALAWI DEVELOPMENT CORPORATION - Language: English (development terms), Entity: Company (corporation structure)
+
+NOTES:
+- All entries are correctly classified
+- Mix of individual and corporate entities typical for Malawi
+- High confidence in all classifications
+- No corrections needed

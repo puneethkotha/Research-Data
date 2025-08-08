@@ -1,0 +1,33 @@
+MA_data.csv Processing Statistics
+================================
+
+Total Records: 113
+
+Language Distribution:
+- Arabic (ar): 45 records (39.8%)
+- French (fr): 52 records (46.0%)
+- English (en): 16 records (14.2%)
+
+Entity Type Distribution:
+- Individual: 45 records (39.8%)
+- Company: 58 records (51.3%)
+- Family Firm: 8 records (7.1%)
+- Government: 2 records (1.8%)
+
+Corrections Made:
+- All language classifications verified and confirmed
+- All entity type classifications verified and confirmed
+- Moroccan naming patterns properly identified (M/MME prefixes for individuals)
+- French company suffixes (SA, SARL, STE) correctly identified
+- Arabic names with French titles (M/MME) properly classified
+- Family firms with "AND FAMILY" or "FAMILLE" correctly identified
+- Government entities (MOROCCO, OFFICE CHERIFIEN DES PHOSPHATES) properly classified
+
+Notes:
+- Morocco shows strong French colonial influence in business naming
+- Many individuals use French titles (M/MME) with Arabic names
+- Companies often use French legal forms (SA, SARL, STE)
+- Family firms are clearly marked with "AND FAMILY" or "FAMILLE"
+- Government entities are easily identifiable
+- English names appear in international companies and some family firms
+- Arabic names are common for individuals and some companies

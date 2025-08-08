@@ -1,0 +1,18 @@
+Language Distribution:
+- French (fr): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 1
+
+Notes:
+- One French company from Martinique (MQ)
+- Company name appears to be "PF ENTERPRISE" (possible typo in original data)
+- Typical French business naming convention
+- All classifications verified and confirmed as accurate
+- No corrections needed - original classifications were correct

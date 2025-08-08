@@ -1,0 +1,21 @@
+Language Distribution:
+- English (en): 6 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 4 entries
+- Government Entities: 1 entry
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 6
+
+Notes:
+- One English individual: MR MINEX KARIA
+- One government entity: UGANDA
+- Four English companies reflecting Uganda's English-speaking business environment
+- Common business suffixes: LTD, LIMITED
+- Typical business terms: HOLDINGS, INTERNATIONAL, MEDICAL, GROUP, BUSINESS
+- Reflects Uganda's English-speaking business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

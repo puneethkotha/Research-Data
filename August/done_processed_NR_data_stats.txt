@@ -1,0 +1,22 @@
+Language Distribution:
+- Dutch (nl): 1 entry
+- English (en): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 2 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 2
+
+Notes:
+- One Dutch company: INTERXION REAL ESATE HOLDING B.V. (B.V. = Besloten Vennootschap)
+- One English company: RYBEL INTERNATIONAL INC.
+- Common Dutch business suffix: B.V.
+- Common English business suffix: INC.
+- Typical business terms: HOLDING, INTERNATIONAL, REAL ESTATE
+- Reflects Nauru's international business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

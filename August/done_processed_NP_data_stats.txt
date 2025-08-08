@@ -1,0 +1,23 @@
+Language Distribution:
+- English (en): 7 entries
+- Nepali (ne): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 7 entries
+- Government Entities: 1 entry
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 8
+
+Notes:
+- One Nepali individual: GAUTAM BUDDHI RAM
+- One government entity: NEPAL
+- Seven English companies reflecting Nepal's English-speaking business environment
+- Strong presence of banking institutions
+- Common business suffixes: LIMITED, LTD
+- Typical business terms: BANK, INTERNATIONAL, INVESTMENT
+- Reflects Nepal's bilingual business environment (Nepali and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

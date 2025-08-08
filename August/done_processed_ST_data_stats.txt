@@ -1,0 +1,19 @@
+Language Distribution:
+- Portuguese (pt): 3 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 3 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 3
+
+Notes:
+- Three Portuguese companies reflecting São Tomé and Príncipe's Portuguese-speaking business environment
+- Common Portuguese business suffixes: S.A., LDA
+- Typical business terms: INVESTMENTS, COMÉRCIO INTERNACIONAL, HOLDING
+- Reflects São Tomé and Príncipe's Portuguese-speaking business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

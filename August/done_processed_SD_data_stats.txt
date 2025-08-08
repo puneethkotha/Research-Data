@@ -1,0 +1,28 @@
+Language Distribution:
+- English (en): 20 entries
+- Arabic (ar): 4 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 12 entries
+- Government Entities: 5 entries
+- Individuals: 4 entries
+- Family Firms: 4 entries
+
+Total Entries: 24
+
+Notes:
+- Four Arabic individuals and family firms
+- Twenty English companies, government entities, and family firms
+- Strong presence of banking and petroleum companies
+- Corrections made:
+  * FARMERS COMMERCIAL BANK: changed from government to company
+  * AL SALAM BANK: changed from government to company
+  * SUDATEL TELECOMMUNICATIONS GROUP: changed from government to company
+  * TADAMON ISLAMIC BANK: changed from government to company
+  * FAISAL ISLAMIC BANK (SUDAN): changed from government to company
+  * SUDANESE FRENCH BANK: changed from government to company
+- Common business suffixes: LIMITED, CO. LTD, CORPORATION, GROUP
+- Typical business terms: BANK, HOLDING, PETROLEUM, TELECOMMUNICATIONS
+- Reflects Sudan's bilingual business environment (Arabic and English)
+- All other classifications verified and confirmed as accurate

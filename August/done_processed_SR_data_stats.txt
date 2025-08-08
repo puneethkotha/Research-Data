@@ -1,0 +1,23 @@
+Language Distribution:
+- Serbian (sr): 38 entries
+- English (en): 5 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 30 entries
+- Government Entities: 1 entry
+- Individuals: 12 entries
+- Family Firms: 0 entries
+
+Total Entries: 43
+
+Notes:
+- Twelve Serbian individuals with typical Serbian names
+- One government entity: SURINAME
+- Thirty Serbian companies and five English companies reflecting Suriname's multilingual business environment
+- Strong presence of Serbian companies with Belgrade addresses
+- Common business terms: KOMPANIJA, GRUP, INZHENERING, LOGISTIKA, TRGOVIJA
+- Common English business suffixes: LTD, NV
+- Reflects Suriname's bilingual business environment (Serbian and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

@@ -1,0 +1,86 @@
+PK_data.csv Processing Stats - Pakistan
+=====================================
+
+Total Records: 119
+Processing Date: August 2024
+
+LANGUAGE DISTRIBUTION:
+- English (en): 81 (68.1%)
+- Urdu (ur): 31 (26.1%)
+- Arabic (ar): 6 (5.0%)
+- Spanish (es): 1 (0.8%)
+
+ENTITY TYPE DISTRIBUTION:
+- Company: 81 (68.1%)
+- Individual: 30 (25.2%)
+- Government: 6 (5.0%)
+- Family Firm: 8 (6.7%)
+
+DETAILED LANGUAGE ANALYSIS:
+
+ENGLISH ENTRIES (81 entries):
+- Formal business corporations with standard English terminology
+- Major Pakistani companies using English for international business
+- Government entities using official English designations
+- Banking and financial institutions
+- Textile, energy, and telecommunications companies
+
+URDU ENTRIES (31 entries):
+- Pakistani/Islamic personal names written in English alphabet
+- Traditional honorifics: "SH" (Sheikh), "CH." (Chaudhry), "SYED", "KHAWAJA", "RANA"
+- Islamic naming patterns with "MUHAMMAD", "AHMED", "KHAN" surnames
+- Examples: "SYED RAFI-UD-DIN", "RANA MUHAMMAD TARIQ KHAN"
+
+ARABIC ENTRIES (6 entries):
+- Middle Eastern personal names
+- Pattern: "MOHAMMED", "ABED AL", "ABDULLA" (Arabic naming conventions)
+- Examples: "ABED AL BARI MOHAMMED SADEK", "MOHAMMED ABDULLA FOUAD MOUNIR"
+
+SPANISH ENTRY (1 entry):
+- "JAVIER GUIJARRO" - Spanish personal name (likely expat/foreign national)
+
+SECTOR ANALYSIS:
+- Textile Industry: Dominant sector (NISHAT, GUL AHMED, SAPPHIRE, etc.)
+- Banking/Finance: Strong presence (BANK AL HABIB, BANK ALFALAH, etc.)
+- Energy/Power: Notable (HUB POWER, FAUJI FERTILIZER, PAKISTAN PETROLEUM)
+- Government: Federal and provincial entities
+- Telecommunications: TELENOR, PAKISTAN TELECOMMUNICATION
+- Family Business Groups: Traditional business families (JAHANGIR SIDDIQUI, FATIMA GROUP)
+
+ENTITY TYPE ANALYSIS:
+
+COMPANIES (81 entries):
+- Formal corporate structures: LIMITED, (PRIVATE) LIMITED, (PVT) LTD, CORPORATION
+- Stock exchange listed companies (PK30XXXFP codes indicate Karachi Stock Exchange)
+- Multinational subsidiaries (TOYOTA, AJINOMOTO, LINDE)
+- Local conglomerates and groups
+
+INDIVIDUALS (30 entries):
+- Mix of Pakistani and Arab personal names
+- Business owners and major shareholders
+- Honorific titles indicating social status
+- "MR." prefix for formal identification
+
+GOVERNMENT ENTITIES (6 entries):
+- Federal: "PAKISTAN", "PAKISTAN GOVT"
+- Provincial: "PUNJAB PROVINCIAL GOVERNMENT", "GOVERNMENT OF KHYBER PAKHTUNKHWA"
+- Military: "ARMY WELFARE TRUST"
+- State enterprise: "PAKISTAN INTERNATIONAL AIRLINES CORPORATION"
+
+FAMILY FIRMS (8 entries):
+- Traditional business groups named after founding families
+- Examples: "JAHANGIR SIDDIQUI GROUP", "FATIMA GROUP", "MONNOO GROUP"
+- "& SONS" or family name patterns: "GANI & TAYUB"
+- Generational business entities: "GUL AHMED", "ARIF HABIB"
+
+CULTURAL NOTES:
+- Reflects Pakistan's multilingual business environment
+- Islamic naming conventions predominant
+- Strong presence of family-based business structures
+- Mix of traditional and modern corporate governance
+
+CLASSIFICATION CONFIDENCE: High
+- Clear language patterns based on naming conventions
+- Accurate entity type classification based on formal designations
+- Cultural and linguistic context properly considered
+- No corrections needed

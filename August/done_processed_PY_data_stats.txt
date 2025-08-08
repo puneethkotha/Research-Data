@@ -1,0 +1,21 @@
+Language Distribution:
+- Spanish (es): 11 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 6 entries
+- Government Entities: 1 entry
+- Individuals: 4 entries
+- Family Firms: 0 entries
+
+Total Entries: 11
+
+Notes:
+- Four Spanish individuals: MARTINES SANABRIA MARIA ALEHANDRA, GRACIA GAVIRA LUNA (appears twice), PASTOR CORTAZAR DOMINGO
+- One government entity: PARAGUAY
+- Six Spanish companies reflecting Paraguay's Spanish-speaking business environment
+- Common Spanish business suffixes: S.A., S.A.E.C.A
+- Typical business terms: GRUPO, BANCO, CALIDAD
+- Reflects Paraguay's Spanish-speaking business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

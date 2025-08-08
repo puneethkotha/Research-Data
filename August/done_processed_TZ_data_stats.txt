@@ -1,0 +1,25 @@
+Language Distribution:
+- English (en): 20 entries
+- Swahili (sw): 2 entries
+- Chinese (zh): 2 entries
+- Arabic (ar): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 20 entries
+- Government Entities: 1 entry
+- Individuals: 7 entries
+- Family Firms: 1 entry
+
+Total Entries: 28
+
+Notes:
+- Seven individuals with diverse linguistic backgrounds: Swahili, English, Chinese, Arabic
+- One government entity: GOVERNMENT OF THE UNITED REPUBLIC OF TANZANIA
+- One family firm: HAJI BROTHERS & CO.LIMITED
+- Twenty English companies reflecting Tanzania's English-speaking business environment
+- Common business suffixes: LIMITED, LTD
+- Typical business terms: GROUP, COMPANY, ENTERPRISES, INVESTMENTS, MANUFACTURING
+- Reflects Tanzania's multilingual business environment (English, Swahili, Chinese, Arabic)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

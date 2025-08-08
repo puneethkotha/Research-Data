@@ -1,0 +1,25 @@
+Language Distribution:
+- English (en): 5 entries
+- French (fr): 4 entries
+- Arabic (ar): 1 entry
+- Chinese (zh): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 9 entries
+- Government Entities: 2 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 11
+
+Notes:
+- One Arabic individual: MOHAMED MAHMOUD
+- One Chinese company: ZHONG ZHOU JING MI KE JI GU FEN YOU XIAN GONG SI
+- Five English companies and government entities
+- Four French companies reflecting Mauritania's colonial history
+- Two government entities: GOVERNMENT OF MAURITANIA and ISLAMIC REPUBLIC OF MAURITANIA
+- Reflects Mauritania's multilingual business environment (Arabic, French, English, Chinese)
+- Common business terms: GROUP, S.A., LIMITED, CO LTD
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

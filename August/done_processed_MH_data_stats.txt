@@ -1,0 +1,57 @@
+MH_data.csv Processing Stats - Marshall Islands
+==============================================
+
+Total Records: 111
+Processing Date: August 2024
+
+LANGUAGE DISTRIBUTION:
+- English (en): 85 (76.6%)
+- Russian (ru): 26 (23.4%)
+
+ENTITY TYPE DISTRIBUTION:
+- Company: 111 (100.0%)
+- Government: 0 (0.0%)
+- Individual: 0 (0.0%)
+- Family Firm: 0 (0.0%)
+
+DETAILED LANGUAGE ANALYSIS:
+
+ENGLISH ENTRIES (85 entries):
+- Standard international business terminology
+- Maritime and shipping companies (major sector in Marshall Islands)
+- Investment and holding companies
+- Clear English corporate structures: LTD, LIMITED, INC, LLC, SA, LP
+
+RUSSIAN TRANSLITERATIONS (26 entries):
+- Russian company names transliterated into Latin alphabet
+- Identifiable patterns: KOMPANIYA (компания = company), KORPORATSIYA (корпорация = corporation)
+- Examples of transliteration:
+  • VESTELLIN KOMMERSHIAL = Russian business terminology
+  • KOMPANIYA SAUSVEI GRUP = Company Southway Group (with English translation provided)
+  • KORPORATSIYA UEBSTER INTERNESHNL = Corporation Webster International
+  • EKSPRESS FORTUN = Express Fortune
+  • DABLYU EL ES = W.L.S (transliteration of English letters)
+
+SECTOR ANALYSIS:
+- Maritime/Shipping: High concentration (typical for Marshall Islands flag state)
+- Investment/Holdings: Major category
+- Trading/Commercial: Significant presence
+- Energy/LNG: Notable representation (partnerships, tankers)
+
+NOTABLE PATTERNS:
+- Many publicly traded shipping companies (indicated by stock codes like MH30001AQ)
+- Russian offshore companies using Marshall Islands incorporation
+- Dual-language entries with transliteration + English translation in parentheses
+- Strong presence of international maritime operations
+
+ENTITY TYPE NOTES:
+- 100% companies - no individuals or government entities
+- All entries use formal corporate designations
+- Marshall Islands as offshore business jurisdiction clearly reflected
+- Mix of local registrations and international corporate structures
+
+CLASSIFICATION CONFIDENCE: High
+- Clear distinction between English and Russian transliterated names
+- All entity types correctly identified as companies
+- Language detection based on transliteration patterns and terminology
+- No corrections needed

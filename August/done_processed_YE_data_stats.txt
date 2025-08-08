@@ -1,0 +1,37 @@
+YE_data.csv Processing Stats - Yemen
+==================================
+
+Total Records: 13
+Processing Date: August 2024
+
+LANGUAGE DISTRIBUTION:
+- Arabic (ar): 13 (100.0%)
+
+ENTITY TYPE DISTRIBUTION:
+- Company: 6 (46.2%)
+- Family Firm: 3 (23.1%)
+- Government: 1 (7.7%)
+- Individual: 3 (23.1%)
+
+DETAILED ANALYSIS:
+1. LET CHA KO INTOENECHANNAEN CHI-EM BI ET - Language: Arabic (transliterated Arabic text), Entity: Company (business structure)
+2. GRAPHIC SIGN (ABDULQADER AND BROTHER) - Language: Arabic (Arabic name + "AND BROTHER"), Entity: Family Firm (brother designation)
+3. ALI MOHAMMED AL HABBARI GROUP - Language: Arabic (Arabic names with AL prefix), Entity: Company (GROUP structure)
+4. HAYEL SAEED ANAM AND COMPANY LTD - Language: Arabic (Arabic names + company structure), Entity: Company (formal LTD designation)
+5. MOHAMMED ALI SALEH EL HASHEDI & BROTHERS - Language: Arabic (Arabic names + & BROTHERS), Entity: Family Firm (brothers designation)
+6. GOVERNMENT OF YEMEN - Language: Arabic (government in Arabic-speaking country), Entity: Government (explicit government entity)
+7. HAYEL SAEED ANAAM & PARTNERS COMPANY CSC - Language: Arabic (Arabic names + partnership), Entity: Family Firm (named partnership)
+8. NATIONAL TRADING COMPANY - Language: Arabic (business in Arabic context), Entity: Company (trading company structure)
+9. INTERNATIONAL BANK of YEMEN YSC - Language: Arabic (bank in Arabic context), Entity: Company (banking institution)
+10. MR. RADWAN ABDO SHEHARY - Language: Arabic (MR. + Arabic names), Entity: Individual (personal title + names)
+11. DR. SHIHAB YEHYA ISKANDAR - Language: Arabic (DR. + Arabic names), Entity: Individual (professional title + names)
+12. MR. TAHA AHMED AL KATEN - Language: Arabic (MR. + Arabic names), Entity: Individual (personal title + names)
+13. MAISON SALEM ALI AL-ZAGHIR - Language: Arabic (MAISON + Arabic names), Entity: Company (business establishment)
+
+NOTES:
+- All entries are correctly classified
+- Good mix of entity types typical for Yemen business environment
+- Strong presence of family firms reflecting regional business culture
+- Arabic language classification consistent throughout
+- High confidence in all classifications
+- No corrections needed

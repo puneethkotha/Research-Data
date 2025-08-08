@@ -1,0 +1,22 @@
+Language Distribution:
+- French (fr): 3 entries
+- English (en): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 3 entries
+- Government Entities: 1 entry
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 4
+
+Notes:
+- One English company: PHOENIX INTERNATIONAL BV (BV = Besloten Vennootschap)
+- Three French companies and government entities reflecting Senegal's French-speaking business environment
+- One government entity: SOCIETE NATIONALE DE TELECOMMUNICATIONS DU SENEGAL
+- Common business suffixes: BV, SA, SARL
+- Typical business terms: INTERNATIONAL, NATIONALE, TELECOMMUNICATIONS
+- Reflects Senegal's bilingual business environment (French and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

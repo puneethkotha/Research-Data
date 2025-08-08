@@ -1,0 +1,25 @@
+Language Distribution:
+- Uzbek (uz): 25 entries
+- Russian (ru): 45 entries
+- English (en): 15 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 60 entries
+- Government Entities: 6 entries
+- Individuals: 19 entries
+- Family Firms: 0 entries
+
+Total Entries: 85
+
+Notes:
+- Nineteen Uzbek individuals with typical Uzbek names
+- Six government entities: MINISTRY OF FINANCE OF THE REPUBLIC OF UZBEKISTAN, TASHKENT REGION ADMINISTRATION, STATE (4 instances), STATE PROPERTY COMMITTEE OF THE REPUBLIC OF UZBEKISTAN, STATE OF UZBEKISTAN (MINISTRY OF FINANCE), UZBEKISTAN
+- Sixty companies reflecting Uzbekistan's multilingual business environment
+- Forty-five Russian companies, fifteen English companies, five Uzbek companies
+- Common Russian business terms: OBSHCHESTVO S OGRANICHENNOI OTVETSTVENNOSTYU, INOSTRANNOE PREDPRIYATIE, AKTSIONERNOE OBSHCHESTVO
+- Common English business suffixes: LLC, JSC
+- Typical business terms: TEKSTIL, INVEST, BANK, MACHINERY
+- Reflects Uzbekistan's multilingual business environment (Uzbek, Russian, and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

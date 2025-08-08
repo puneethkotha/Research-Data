@@ -1,0 +1,23 @@
+Language Distribution:
+- Arabic (ar): 50 entries
+- English (en): 6 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 3 entries
+- Government Entities: 3 entries
+- Individuals: 50 entries
+- Family Firms: 1 entry
+
+Total Entries: 56
+
+Notes:
+- Fifty Arabic individuals with typical Syrian names
+- Three government entities: GOVERNMENT OF SYRIA, MINISTRY OF ELECTRICITY, GOVERNMENT OF SYRIA VIA THE MINISTRY OF COMMUNICATIONS & TECHNOLOGY
+- Three English companies: ATTAR GROUP, KAYALI COTON TEXTILE
+- One English family firm: ZAMRICK BROTHERS CO
+- Strong presence of Arabic individuals reflecting Syria's Arabic-speaking population
+- Common business terms: GROUP, COTON TEXTILE, BROTHERS
+- Reflects Syria's bilingual business environment (Arabic and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

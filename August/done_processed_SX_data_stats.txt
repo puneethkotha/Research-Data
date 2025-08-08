@@ -1,0 +1,22 @@
+Language Distribution:
+- Dutch (nl): 1 entry
+- English (en): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 2 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 2
+
+Notes:
+- One Dutch company: FLORISOS N.V. (N.V. = Naamloze Vennootschap)
+- One English company: NAGICO HOLDINGS LTD
+- Common Dutch business suffix: N.V.
+- Common English business suffix: LTD
+- Typical business terms: HOLDINGS
+- Reflects Sint Maarten's bilingual business environment (Dutch and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

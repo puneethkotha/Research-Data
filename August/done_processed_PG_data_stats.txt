@@ -1,0 +1,24 @@
+Language Distribution:
+- English (en): 20 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 18 entries
+- Government Entities: 1 entry
+- Individuals: 2 entries
+- Family Firms: 0 entries
+
+Total Entries: 20
+
+Notes:
+- Two English individuals: SELEPA O'HANLON and GEORGE WILLIAM ISIAH DOONAN
+- One government entity: MINERAL RESOURCES DEVELOPMENT COMPANY LIMITED
+- Eighteen companies reflecting Papua New Guinea's English-speaking business environment
+- Strong presence of mining and financial institutions
+- Corrections made:
+  * BANK of SOUTH PACIFIC LTD.: changed from government to company
+  * OK TEDI MINING LIMITED: changed from government to company
+- Common business suffixes: LIMITED, LTD, PTY LIMITED
+- Typical business terms: SECURITIES, MINING, HOLDINGS, INVESTMENTS, ASSET MANAGEMENT
+- Reflects Papua New Guinea's English-speaking business environment
+- All other classifications verified and confirmed as accurate

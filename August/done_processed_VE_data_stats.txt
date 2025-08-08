@@ -1,0 +1,24 @@
+Language Distribution:
+- Spanish (es): 30 entries
+- English (en): 4 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 30 entries
+- Government Entities: 4 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 34
+
+Notes:
+- One English individual: VON FEDAK VON STILLFRIED ANDRAS ORBAN
+- Four government entities: MINISTERIO DEL PODER POPULAR PARA CIENCIA, TECNOLOGIA E INNOVACION, VENEZUELA, MINISTERIO DEL PODER POPULAR DE PETROLEO Y MINERIA
+- Thirty companies reflecting Venezuela's bilingual business environment
+- Twenty-eight Spanish companies and two English companies
+- Common Spanish business suffixes: S.A., C.A., S.R.L., S.A.C.A.
+- Common English business terms: DEVELOPMENT BANK, INTERNATIONAL
+- Typical business terms: INVERSIONES, CORPORACION, BANCO, FINANCIERO
+- Reflects Venezuela's bilingual business environment (Spanish and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

@@ -1,0 +1,23 @@
+Language Distribution:
+- German (de): 6 entries
+- English (en): 4 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 9 entries
+- Government Entities: 1 entry
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 10
+
+Notes:
+- One government entity: MINISTRY OF INFORMATION AND COMMUNICATIONS TECHNOLOGY
+- Nine companies reflecting Eswatini's multilingual business environment
+- Six German companies and four English companies
+- Common German business suffix: AG (Aktiengesellschaft)
+- Common English business suffixes: LTD, PTY LTD, LIMITED
+- Typical business terms: UNIVERSAL, INTERNATIONAL, ASSOCIATION, INVESTMENT
+- Reflects Eswatini's bilingual business environment (German and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

@@ -1,0 +1,23 @@
+Language Distribution:
+- Spanish (es): 8 entries
+- English (en): 2 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 8 entries
+- Government Entities: 2 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 10
+
+Notes:
+- Two government entities: EL SALVADOR and BANCO CENTRAL DE RESERVA DE EL SALVADOR
+- Eight companies reflecting El Salvador's bilingual business environment
+- Six Spanish companies and two English companies
+- Common Spanish business suffixes: SA DE CV, S.A
+- Common English business suffix: LTD
+- Typical business terms: CORPORACION, INVERSIONES FINANCIERAS, HOLDING, BUSINESS
+- Reflects El Salvador's bilingual business environment (Spanish and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

@@ -1,0 +1,33 @@
+MD_data.csv Processing Statistics
+================================
+
+Total Records: 199
+
+Language Distribution:
+- Romanian (ro): 142 records (71.4%)
+- Russian (ru): 8 records (4.0%)
+- English (en): 49 records (24.6%)
+
+Entity Type Distribution:
+- Individual: 18 records (9.0%)
+- Company: 165 records (82.9%)
+- Government: 16 records (8.1%)
+
+Corrections Made:
+- All language classifications verified and confirmed
+- All entity type classifications verified and confirmed
+- Romanian names and company suffixes (SRL, SA, SC) properly identified
+- Russian names and company forms (CJSC, OBSHCHESTVO, OOO) correctly identified
+- Government entities (MINISTERUL, BIROUL, AGENTIA) properly classified
+- English company names in international businesses correctly identified
+- Individual names in Romanian and Russian properly classified
+
+Notes:
+- Moldova shows strong Romanian influence in business naming (71.4% Romanian)
+- Many companies use Romanian legal forms (SRL, SA, SC)
+- Russian influence present in some companies and individuals (4.0%)
+- English names appear in international companies and some businesses (24.6%)
+- Government entities are clearly marked with Romanian terms (MINISTERUL, BIROUL)
+- Individual names are primarily Romanian with some Russian names
+- Company names often include Romanian words (GRUP, SRL, SA)
+- Some companies have mixed language names (Romanian + English)

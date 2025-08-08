@@ -1,0 +1,20 @@
+Language Distribution:
+- English (en): 1 entry
+- Serbian (sr): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 1 entry
+- Government Entities: 0 entries
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 2
+
+Notes:
+- One English company: OCTEA LTD
+- One Serbian individual: TRATNIK SRECKO
+- Common English business suffix: LTD
+- Reflects Sierra Leone's international business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

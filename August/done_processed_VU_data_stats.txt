@@ -1,0 +1,31 @@
+VU_data.csv Processing Stats - Vanuatu
+====================================
+
+Total Records: 8
+Processing Date: August 2024
+
+LANGUAGE DISTRIBUTION:
+- English (en): 8 (100.0%)
+
+ENTITY TYPE DISTRIBUTION:
+- Company: 8 (100.0%)
+- Government: 0 (0.0%)
+- Individual: 0 (0.0%)
+- Family Firm: 0 (0.0%)
+
+DETAILED ANALYSIS:
+1. GLP GERMAN LIGHT PRODUCTS LTD. - Language: English (clear business terminology), Entity: Company (LTD designation)
+2. GAINBATCH LIMITED - Language: English (business terminology), Entity: Company (LIMITED designation)
+3. GALAXY INVESTMENTS LIMITED - Language: English (investment terminology), Entity: Company (LIMITED designation)
+4. SPINNAKER INVESTMENTS LIMITED - Language: English (investment terminology), Entity: Company (LIMITED designation)
+5. API LIMITED - Language: English (business terminology), Entity: Company (LIMITED designation)
+6. FOREX CAPITAL TRADING LIMITED - Language: English (financial terminology), Entity: Company (LIMITED designation)
+7. ARUBA LIMITED - Language: English (business terminology), Entity: Company (LIMITED designation)
+8. FITZROY YACHTS HOLDING LIMITED - Language: English (business terminology), Entity: Company (HOLDING LIMITED designation)
+
+NOTES:
+- All entries are correctly classified
+- All entities are companies, typical for Vanuatu as a business incorporation jurisdiction
+- Consistent "LIMITED" company structure throughout
+- High confidence in all classifications
+- No corrections needed

@@ -1,0 +1,24 @@
+Language Distribution:
+- French (fr): 4 entries
+- English (en): 2 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 2 entries
+- Government Entities: 1 entry
+- Individuals: 3 entries
+- Family Firms: 0 entries
+
+Total Entries: 6
+
+Notes:
+- Three French individuals: HUSSEIN SAYEGH, FOLLY DEMANYA AYIVI, FOLLYGAN LOKOSSOU
+- One government entity: GOVERNMENT OF TOGO
+- Two companies reflecting Togo's bilingual business environment
+- One French company: SOCIETE AFRICAINE DEVELOPPEMENT
+- One English company: ECOBANK TRANSNATIONAL INCORPORATED
+- Common French business terms: SOCIETE, DEVELOPPEMENT
+- Common English business terms: GOVERNMENT, TRANSNATIONAL, INCORPORATED
+- Reflects Togo's bilingual business environment (French and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

@@ -1,0 +1,21 @@
+Language Distribution:
+- Italian (it): 37 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 35 entries
+- Government Entities: 1 entry
+- Individuals: 1 entry
+- Family Firms: 0 entries
+
+Total Entries: 37
+
+Notes:
+- One Italian individual: SANTORO LINA
+- One government entity: CASSA DI RISPARMIO DELLA REPUBLICA DI SAN MARINO
+- Thirty-five Italian companies reflecting San Marino's Italian-speaking business environment
+- Common Italian business suffixes: S.P.A., S.R.L., SPA, SA
+- Typical business terms: INDUSTRIALE, IMMOBILIARE, INVEST, DESIGN, CORPORATION
+- Reflects San Marino's Italian-speaking business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

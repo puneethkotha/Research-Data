@@ -1,0 +1,20 @@
+Language Distribution:
+- English (en): 35 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 35 entries
+- Government Entities: 0 entries
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 35
+
+Notes:
+- Thirty-five English companies reflecting Saint Vincent and the Grenadines' English-speaking business environment
+- Common business suffixes: LTD, LIMITED, CORP, INC
+- Typical business terms: HOLDINGS, INVEST, TRADE, SERVICES, INTERNATIONAL
+- Some companies have Russian-sounding names but are registered as English companies
+- Reflects Saint Vincent and the Grenadines' English-speaking business environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

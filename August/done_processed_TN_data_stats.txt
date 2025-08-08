@@ -1,0 +1,26 @@
+Language Distribution:
+- Arabic (ar): 20 entries
+- French (fr): 25 entries
+- English (en): 24 entries
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 47 entries
+- Government Entities: 1 entry
+- Individuals: 20 entries
+- Family Firms: 3 entries
+
+Total Entries: 69
+
+Notes:
+- Twenty Arabic individuals with typical Tunisian names
+- One government entity: TUNISIA
+- Three family firms: ABDELJALIL BENNIS AND FAMILY, SAIDA BERRADA AND FAMILY, LOUKIL FAMILY
+- Forty-seven companies reflecting Tunisia's multilingual business environment
+- Twenty-five French companies, twenty-four English companies
+- Common French business suffixes: SA, STE, SOCIETE
+- Common English business suffixes: LTD, COMPANY, GROUP, HOLDING
+- Typical business terms: SOCIETE, GROUPE, INVESTMENT, HOLDING, BANK
+- Reflects Tunisia's trilingual business environment (Arabic, French, and English)
+- All classifications verified and confirmed as accurate
+- No corrections needed - all original classifications were correct

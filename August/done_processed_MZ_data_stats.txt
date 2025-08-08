@@ -1,0 +1,32 @@
+MZ_data.csv Processing Stats - Mozambique
+========================================
+
+Total Records: 9
+Processing Date: August 2024
+
+LANGUAGE DISTRIBUTION:
+- Portuguese (pt): 9 (100.0%)
+
+ENTITY TYPE DISTRIBUTION:
+- Company: 6 (66.7%)
+- Government: 2 (22.2%)
+- Individual: 1 (11.1%)
+- Family Firm: 0 (0.0%)
+
+DETAILED ANALYSIS:
+1. MOZAMBIQUE TELECOM - Language: Portuguese (telecom company in Portuguese-speaking country), Entity: Company (telecommunications structure)
+2. IMOC EMPREENDIMENTOS IMOBILIARIOS SARL - Language: Portuguese (empreendimentos imobiliários = real estate ventures), Entity: Company (SARL designation)
+3. MOZAMBIQUE - Language: Portuguese (country name), Entity: Government (national entity)
+4. INSTITUTO DE GESTAO DAS PARTICIPACOES DO ESTADO - Language: Portuguese (state institution terminology), Entity: Government (do estado = of the state)
+5. MOCAMBIQUE CAPITAIS, SA - Language: Portuguese (Moçambique name + SA designation), Entity: Company (SA = Sociedade Anônima)
+6. PORTUS INDICO-SOCIEDADE DE SERVICOS PORTUARIOS SA - Language: Portuguese (port services company), Entity: Company (sociedade SA structure)
+7. EMPRESA NACIONAL DE HIDROCARBONETOS, EP - Language: Portuguese (national hydrocarbons company), Entity: Company (empresa pública structure)
+8. MOÇAMBIQUE TERRAMAR TRADING, LDA - Language: Portuguese (Moçambique + LDA designation), Entity: Company (LDA = Limitada)
+9. CHAUQUE MINGARDA MANUEL FRANCISCO - Language: Portuguese (Portuguese/African personal names), Entity: Individual (four personal names)
+
+NOTES:
+- All entries are correctly classified
+- Consistent Portuguese language usage as expected for Mozambique
+- Mix of private companies, state-owned enterprises, and government institutions
+- High confidence in all classifications
+- No corrections needed

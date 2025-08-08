@@ -1,0 +1,17 @@
+Language Distribution:
+- Italian (it): 1 entry
+- Other: 0 entries
+
+Entity Type Distribution:
+- Companies: 0 entries
+- Government Entities: 1 entry
+- Individuals: 0 entries
+- Family Firms: 0 entries
+
+Total Entries: 1
+
+Notes:
+- One Italian government entity: ISTITUTO PER LE OPERE DI RELIGIONE (Institute for Religious Works - Vatican Bank)
+- Reflects Vatican City's Italian-speaking environment
+- All classifications verified and confirmed as accurate
+- No corrections needed - original classification was correct
