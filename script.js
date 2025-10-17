@@ -23,18 +23,14 @@ class CountryDataViewer {
 
     async loadFiles() {
         try {
-            // Try to fetch real file list from API
-            const response = await fetch('/api/files');
-            if (response.ok) {
-                this.files = await response.json();
-                return;
-            }
+            // For GitHub Pages, we'll use the hardcoded file list
+            // since we can't run a server to scan the directory
+            this.files = this.generateMockFiles();
+            return;
         } catch (error) {
-            console.warn('API not available, using mock data:', error);
+            console.warn('Error loading files, using mock data:', error);
+            this.files = this.generateMockFiles();
         }
-        
-        // Fallback to mock data
-        this.files = this.generateMockFiles();
     }
 
     generateMockFiles() {
@@ -236,18 +232,20 @@ class CountryDataViewer {
 
     async loadFileContent(filePath) {
         try {
-            // Try to fetch real file content from API
-            console.log(`Loading file: ${filePath}`);
-            const response = await fetch(`/api/file-content?path=${encodeURIComponent(filePath)}`);
+            // For GitHub Pages, use raw GitHub URLs
+            const githubRawUrl = `https://raw.githubusercontent.com/puneethkotha/Research-Data/main/${filePath}`;
+            console.log(`Loading file from GitHub: ${githubRawUrl}`);
+            
+            const response = await fetch(githubRawUrl);
             if (response.ok) {
-                const data = await response.json();
-                console.log(`Successfully loaded file: ${filePath}, content length: ${data.content.length}`);
-                return data.content;
+                const content = await response.text();
+                console.log(`Successfully loaded file: ${filePath}, content length: ${content.length}`);
+                return content;
             } else {
                 console.error(`Failed to load file: ${filePath}, status: ${response.status}`);
             }
         } catch (error) {
-            console.warn('API not available, using mock data:', error);
+            console.warn('GitHub Pages not available, using mock data:', error);
         }
         
         // Fallback to mock data
