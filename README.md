@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 # Data Classification Research - Parent Entity Analysis
+<img width="420" height="360" alt="project-thumbnail" src="https://github.com/user-attachments/assets/0482247c-10eb-4615-afca-7e2eb1a37b90" />
 
 ## Project Overview
 
