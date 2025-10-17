@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Workflow - Interactive Showcase</title>
+    <link href="ml_showcase_interactive.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="hero-header">
+            <div class="hero-content">
+                <button class="back-to-main" onclick="window.location.href='index.html'">← Back to Research Data</button>
+                <h1>Model Workflow</h1>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <button class="nav-btn active" onclick="showSection('workflow')">Decision Flow</button>
+            <button class="nav-btn" onclick="showSection('demo')">Live Demo</button>
+            <button class="nav-btn" onclick="showSection('technical')">Technical Details</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- AI Workflow Section -->
+            <section id="workflow" class="content-section active">
+                <div class="section-header">
+                    <h2>Decision Flow</h2>
+                </div>
+                
+                <div class="workflow-container">
+
+                    
+                    <div class="decision-tree">
+                        <div class="decision-flow">
+                            <!-- Step 1: Input -->
+                            <div class="decision-node start active" data-step="1">
+                                <div class="node-content">
+                                    <span class="node-icon"></span>
+                                    <span class="node-label">Entity Name Input</span>
+                                </div>
+                                <div class="node-details">
+                                    <div class="example-entity">
+                                        <span class="entity-text">"MR. AHMED KHAN & SONS LTD"</span>
+                                        <div class="entity-breakdown">
+                                            <span class="breakdown-item">MR.</span>
+                                            <span class="breakdown-item">AHMED</span>
+                                            <span class="breakdown-item">KHAN</span>
+                                            <span class="breakdown-item">& SONS</span>
+                                            <span class="breakdown-item">LTD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node-arrow">↓</div>
+                            </div>
+                            
+                            <!-- Step 2: Language Detection -->
+                            <div class="decision-node" data-step="2">
+                                <div class="node-content">
+                                    <span class="node-icon"></span>
+                                    <span class="node-label">Language Detection</span>
+                                </div>
+                                <div class="node-details">
+                                    <div class="language-analysis">
+                                        <div class="lang-item">
+                                            <span class="lang-name">Arabic</span>
+                                            <span class="lang-confidence">95%</span>
+                                            <span class="lang-evidence">AHMED, KHAN</span>
+                                        </div>
+                                        <div class="lang-item">
+                                            <span class="lang-name">English</span>
+                                            <span class="lang-confidence">100%</span>
+                                            <span class="lang-evidence">MR., &, SONS, LTD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node-arrow">↓</div>
+                            </div>
+                            
+                            <!-- Step 3: Pattern Matching -->
+                            <div class="decision-node" data-step="3">
+                                <div class="node-content">
+                                    <span class="node-icon"></span>
+                                    <span class="node-label">Pattern Matching</span>
+                                </div>
+                                <div class="node-details">
+                                    <div class="pattern-matches">
+                                        <div class="pattern-match">
+                                            <span class="pattern-type">Personal Title</span>
+                                            <span class="pattern-value">MR.</span>
+                                            <span class="pattern-score">+45</span>
+                                        </div>
+                                        <div class="pattern-match">
+                                            <span class="pattern-type">Arabic Names</span>
+                                            <span class="pattern-value">AHMED, KHAN</span>
+                                            <span class="pattern-score">+20</span>
+                                        </div>
+                                        <div class="pattern-match">
+                                            <span class="pattern-type">Family Indicator</span>
+                                            <span class="pattern-value">& SONS</span>
+                                            <span class="pattern-score">+60</span>
+                                        </div>
+                                        <div class="pattern-match">
+                                            <span class="pattern-type">Company Suffix</span>
+                                            <span class="pattern-value">LTD</span>
+                                            <span class="pattern-score">+30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node-arrow">↓</div>
+                            </div>
+                            
+                            <!-- Step 4: Scoring System -->
+                            <div class="decision-node" data-step="4">
+                                <div class="node-content">
+                                    <span class="node-icon"></span>
+                                    <span class="node-label">Scoring System</span>
+                                </div>
+                                <div class="node-details">
+                                    <div class="scoring-system">
+                                        <div class="score-category individual">
+                                            <span class="category-name">Individual</span>
+                                            <div class="score-bar">
+                                                <div class="score-fill" style="width: 45%"></div>
+                                            </div>
+                                            <span class="score-value">45</span>
+                                        </div>
+                                        <div class="score-category family-firm">
+                                            <span class="category-name">Family Firm</span>
+                                            <div class="score-bar">
+                                                <div class="score-fill" style="width: 60%"></div>
+                                            </div>
+                                            <span class="score-value">60</span>
+                                        </div>
+                                        <div class="score-category company">
+                                            <span class="category-name">Company</span>
+                                            <div class="score-bar">
+                                                <div class="score-fill" style="width: 30%"></div>
+                                            </div>
+                                            <span class="score-value">30</span>
+                                        </div>
+                                        <div class="score-category government">
+                                            <span class="category-name">Government</span>
+                                            <div class="score-bar">
+                                                <div class="score-fill" style="width: 0%"></div>
+                                            </div>
+                                            <span class="score-value">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node-arrow">↓</div>
+                            </div>
+                            
+                            <!-- Step 5: Final Classification -->
+                            <div class="decision-node final" data-step="5">
+                                <div class="node-content">
+                                    <span class="node-icon"></span>
+                                    <span class="node-label">Final Classification</span>
+                                </div>
+                                <div class="node-details">
+                                    <div class="final-result">
+                                        <div class="result-type family-firm">
+                                            <span class="type-label">Family Firm</span>
+                                            <span class="type-confidence">87% Confidence</span>
+                                        </div>
+                                        <div class="result-reasoning">
+                                            <span class="reasoning-text">Highest score due to family indicators and personal elements</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </section>
+
+
+                
+
+            </section>
+
+            <!-- Live Demo Section -->
+            <section id="demo" class="content-section">
+                <div class="section-header">
+                    <h2>Real-time Classification Demo</h2>
+                </div>
+                
+                <div class="demo-container">
+                    <div class="demo-input">
+                        <h3>Select an Entity to See Classification</h3>
+                        <p class="demo-subtitle">Click any entity below to watch the model analyze and classify it in real-time</p>
+                        
+                        <div class="entity-categories">
+                            <h4>Individual Entities</h4>
+                            <div class="entity-selection">
+                                <div class="entity-option" data-entity="MR. JOHN SMITH">
+                                    <span class="entity-text">MR. JOHN SMITH</span>
+                                    <span class="entity-type">Simple English Individual</span>
+                                </div>
+                                <div class="entity-option" data-entity="DR. AHMED HUSSEIN AL-ZAHRA">
+                                    <span class="entity-text">DR. AHMED HUSSEIN AL-ZAHRA</span>
+                                    <span class="entity-type">Arabic Academic</span>
+                                </div>
+                                <div class="entity-option" data-entity="PROF. MARIA GARCIA RODRIGUEZ">
+                                    <span class="entity-text">PROF. MARIA GARCIA RODRIGUEZ</span>
+                                    <span class="entity-type">Spanish Professor</span>
+                                </div>
+                                <div class="entity-option" data-entity="SHEIKH ABDUL RAHMAN KHAN">
+                                    <span class="entity-text">SHEIKH ABDUL RAHMAN KHAN</span>
+                                    <span class="entity-type">Islamic Honorific</span>
+                                </div>
+                                <div class="entity-option" data-entity="MR. DENNIS KAPUTO CHIWELE">
+                                    <span class="entity-text">MR. DENNIS KAPUTO CHIWELE</span>
+                                    <span class="entity-type">African Names</span>
+                                </div>
+                            </div>
+                            
+                            <h4>Company Entities</h4>
+                            <div class="entity-selection">
+                                <div class="entity-option" data-entity="CYPREA MARINE FOODS PVT LTD">
+                                    <span class="entity-text">CYPREA MARINE FOODS PVT LTD</span>
+                                    <span class="entity-type">Maldives Business</span>
+                                </div>
+                                <div class="entity-option" data-entity="KOMPANIYA VESTELLIN INVESTMENTS">
+                                    <span class="entity-text">KOMPANIYA VESTELLIN INVESTMENTS</span>
+                                    <span class="entity-type">Russian Company</span>
+                                </div>
+                                <div class="entity-option" data-entity="EMPRESA NACIONAL DE HIDROCARBONETOS">
+                                    <span class="entity-text">EMPRESA NACIONAL DE HIDROCARBONETOS</span>
+                                    <span class="entity-type">Portuguese Energy Company</span>
+                                </div>
+                                <div class="entity-option" data-entity="GLOBAL INVESTMENTS & TRADING CORP">
+                                    <span class="entity-text">GLOBAL INVESTMENTS & TRADING CORP</span>
+                                    <span class="entity-type">International Business</span>
+                                </div>
+                                <div class="entity-option" data-entity="MARINE SHIPPING SERVICES INC">
+                                    <span class="entity-text">MARINE SHIPPING SERVICES INC</span>
+                                    <span class="entity-type">Shipping Company</span>
+                                </div>
+                            </div>
+                            
+                            <h4>Family Firm Entities</h4>
+                            <div class="entity-selection">
+                                <div class="entity-option" data-entity="MR. MOHAMMED ALI KHAN & SONS LTD">
+                                    <span class="entity-text">MR. MOHAMMED ALI KHAN & SONS LTD</span>
+                                    <span class="entity-type">Complex Family Business</span>
+                                </div>
+                                <div class="entity-option" data-entity="ABDULQADER AND BROTHER TRADING">
+                                    <span class="entity-text">ABDULQADER AND BROTHER TRADING</span>
+                                    <span class="entity-type">Arabic Family Business</span>
+                                </div>
+                                <div class="entity-option" data-entity="GANI & TAYUB (PVT) LIMITED">
+                                    <span class="entity-text">GANI & TAYUB (PVT) LIMITED</span>
+                                    <span class="entity-type">Pakistani Partnership</span>
+                                </div>
+                                <div class="entity-option" data-entity="SMITH FAMILY HOLDINGS GROUP">
+                                    <span class="entity-text">SMITH FAMILY HOLDINGS GROUP</span>
+                                    <span class="entity-type">Western Family Business</span>
+                                </div>
+                                <div class="entity-option" data-entity="KHAN & PARTNERS INVESTMENTS">
+                                    <span class="entity-text">KHAN & PARTNERS INVESTMENTS</span>
+                                    <span class="entity-type">Family Investment Firm</span>
+                                </div>
+                            </div>
+                            
+                            <h4>Government Entities</h4>
+                            <div class="entity-selection">
+                                <div class="entity-option" data-entity="GOVERNMENT OF MALAWI">
+                                    <span class="entity-text">GOVERNMENT OF MALAWI</span>
+                                    <span class="entity-type">National Government</span>
+                                </div>
+                                <div class="entity-option" data-entity="RESERVE BANK OF ZIMBABWE">
+                                    <span class="entity-text">RESERVE BANK OF ZIMBABWE</span>
+                                    <span class="entity-type">Central Bank</span>
+                                </div>
+                                <div class="entity-option" data-entity="MINISTRY OF FINANCE & PLANNING">
+                                    <span class="entity-text">MINISTRY OF FINANCE & PLANNING</span>
+                                    <span class="entity-type">Government Department</span>
+                                </div>
+                                <div class="entity-option" data-entity="CENTRAL BANK OF KENYA">
+                                    <span class="entity-text">CENTRAL BANK OF KENYA</span>
+                                    <span class="entity-type">Financial Institution</span>
+                                </div>
+                                <div class="entity-option" data-entity="DEPARTMENT OF TRADE & INDUSTRY">
+                                    <span class="entity-text">DEPARTMENT OF TRADE & INDUSTRY</span>
+                                    <span class="entity-type">Government Agency</span>
+                                </div>
+                            </div>
+                            
+                            <h4>Multi-Language Complex Entities</h4>
+                            <div class="entity-selection">
+                                <div class="entity-option" data-entity="KOMPANIYA VESTELLIN & PARTNERS LTD">
+                                    <span class="entity-text">KOMPANIYA VESTELLIN & PARTNERS LTD</span>
+                                    <span class="entity-type">Russian + English Hybrid</span>
+                                </div>
+                                <div class="entity-option" data-entity="EMPRESA FAMILIAR GARCIA & HIJOS">
+                                    <span class="entity-text">EMPRESA FAMILIAR GARCIA & HIJOS</span>
+                                    <span class="entity-type">Spanish Family Business</span>
+                                </div>
+                                <div class="entity-option" data-entity="MOHAMMED ALI KHAN TRADING CO">
+                                    <span class="entity-text">MOHAMMED ALI KHAN TRADING CO</span>
+                                    <span class="entity-type">Arabic + English Business</span>
+                                </div>
+                                <div class="entity-option" data-entity="KHOLDING INVESTMENTS & PARTNERS">
+                                    <span class="entity-text">KHOLDING INVESTMENTS & PARTNERS</span>
+                                    <span class="entity-type">Russian + English Hybrid</span>
+                                </div>
+                                <div class="entity-option" data-entity="FAMILIA RODRIGUEZ ENTERPRISES">
+                                    <span class="entity-text">FAMILIA RODRIGUEZ ENTERPRISES</span>
+                                    <span class="entity-type">Spanish Family Enterprise</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-process">
+                        <h3>Classification Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step" data-step="1">
+                                <div class="step-header">
+                                    <span class="step-icon"></span>
+                                    <span class="step-title">Text Analysis</span>
+                                </div>
+                                <div class="step-content">
+                                    <div class="text-breakdown">
+                                        <span class="word">MR.</span>
+                                        <span class="word">MOHAMMED</span>
+                                        <span class="word">ALI</span>
+                                        <span class="word">KHAN</span>
+                                        <span class="word">&</span>
+                                        <span class="word">SONS</span>
+                                        <span class="word">LTD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step" data-step="2">
+                                <div class="step-header">
+                                    <span class="step-icon"></span>
+                                    <span class="step-title">Language Detection</span>
+                                </div>
+                                <div class="step-content">
+                                    <div class="language-results">
+                                        <div class="lang-result">
+                                            <span class="lang-name">Arabic</span>
+                                            <span class="lang-words">MOHAMMED, ALI, KHAN</span>
+                                        </div>
+                                        <div class="lang-result">
+                                            <span class="lang-name">English</span>
+                                            <span class="lang-words">MR., &, SONS, LTD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step" data-step="3">
+                                <div class="step-header">
+                                    <span class="step-icon"></span>
+                                    <span class="step-title">Pattern Matching</span>
+                                </div>
+                                <div class="step-content">
+                                    <div class="pattern-results">
+                                        <div class="pattern-result">
+                                            <span class="pattern-name">Personal Title</span>
+                                            <span class="pattern-match">MR.</span>
+                                        </div>
+                                        <div class="pattern-result">
+                                            <span class="pattern-name">Arabic Names</span>
+                                            <span class="pattern-match">MOHAMMED, ALI, KHAN</span>
+                                        </div>
+                                        <div class="pattern-result">
+                                            <span class="pattern-name">Family Indicator</span>
+                                            <span class="pattern-match">& SONS</span>
+                                        </div>
+                                        <div class="pattern-result">
+                                            <span class="pattern-name">Company Suffix</span>
+                                            <span class="pattern-match">LTD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step" data-step="4">
+                                <div class="step-header">
+                                    <span class="step-icon"></span>
+                                    <span class="step-title">Scoring</span>
+                                </div>
+                                <div class="step-content">
+                                    <div class="scoring-results">
+                                        <div class="score-result individual">
+                                            <span class="score-label">Individual</span>
+                                            <span class="score-value">45</span>
+                                        </div>
+                                        <div class="score-result family-firm">
+                                            <span class="score-label">Family Firm</span>
+                                            <span class="score-value">60</span>
+                                        </div>
+                                        <div class="score-result company">
+                                            <span class="score-label">Company</span>
+                                            <span class="score-value">30</span>
+                                        </div>
+                                        <div class="score-result government">
+                                            <span class="score-label">Government</span>
+                                            <span class="score-value">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="process-step" data-step="5">
+                                <div class="step-header">
+                                    <span class="step-icon"></span>
+                                    <span class="step-title">Result</span>
+                                </div>
+                                <div class="step-content">
+                                    <div class="final-result">
+                                        <div class="result-type family-firm">
+                                            <span class="type-name">Family Firm</span>
+                                            <span class="type-confidence">87% Confidence</span>
+                                        </div>
+                                        <div class="result-explanation">
+                                            <span class="explanation-text">Highest score due to family indicators and personal elements</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Details Section -->
+            <section id="technical" class="content-section">
+                <div class="section-header">
+                    <h2>Technical Implementation</h2>
+                </div>
+                
+                <div class="technical-container">
+                    <div class="tech-overview">
+                        <h3>Model Architecture</h3>
+                        <div class="architecture-diagram">
+                            <div class="arch-layer input-layer">
+                                <h4>Input Layer</h4>
+                                <div class="layer-content">
+                                    <span class="layer-item">Entity Name</span>
+                                    <span class="layer-item">Country Code</span>
+                                    <span class="layer-item">Context</span>
+                                </div>
+                            </div>
+                            
+                            <div class="arch-arrow">↓</div>
+                            
+                            <div class="arch-layer feature-layer">
+                                <h4>Feature Extraction</h4>
+                                <div class="layer-content">
+                                    <span class="layer-item">Text Analysis</span>
+                                    <span class="layer-item">Pattern Matching</span>
+                                    <span class="layer-item">Language Detection</span>
+                                </div>
+                            </div>
+                            
+                            <div class="arch-arrow">↓</div>
+                            
+                            <div class="arch-layer ml-layer">
+                                <h4>ML Algorithm</h4>
+                                <div class="layer-content">
+                                    <span class="layer-item">Random Forest</span>
+                                    <span class="layer-item">TF-IDF Vectorization</span>
+                                    <span class="layer-item">Ensemble Methods</span>
+                                </div>
+                            </div>
+                            
+                            <div class="arch-arrow">↓</div>
+                            
+                            <div class="arch-layer output-layer">
+                                <h4>Output</h4>
+                                <div class="layer-content">
+                                    <span class="layer-item">Entity Type</span>
+                                    <span class="layer-item">Confidence Score</span>
+                                    <span class="layer-item">Pattern Evidence</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-details">
+                        <div class="tech-card">
+                            <h4>Feature Engineering</h4>
+                            <div class="tech-content">
+                                <p>The model extracts 15+ features including:</p>
+                                <ul>
+                                    <li>Text length and word count</li>
+                                    <li>Presence of special characters</li>
+                                    <li>Language-specific patterns</li>
+                                    <li>Business terminology</li>
+                                    <li>Cultural naming conventions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card">
+                            <h4>Pattern Recognition</h4>
+                            <div class="tech-content">
+                                <p>Advanced regex and NLP techniques:</p>
+                                <ul>
+                                    <li>Multi-language keyword matching</li>
+                                    <li>Contextual pattern analysis</li>
+                                    <li>Fuzzy string matching</li>
+                                    <li>Cultural context awareness</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-card">
+                            <h4>Scoring Algorithm</h4>
+                            <div class="tech-content">
+                                <p>Sophisticated scoring system:</p>
+                                <ul>
+                                    <li>Weighted pattern scoring</li>
+                                    <li>Confidence calculation</li>
+                                    <li>Threshold-based classification</li>
+                                    <li>Ensemble decision making</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+        </footer>
+    </div>
+
+    <script src="ml_showcase_interactive.js"></script>
+</body>
+</html>
