@@ -45,82 +45,34 @@ header p {
     justify-content: center;
 }
 
-.workflow-card {
-    background: #ffffff;
-    border: 1px solid #e5e5e7;
-    border-radius: 12px;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    max-width: 500px;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.workflow-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    border-color: #007aff;
-}
-
-.workflow-icon {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    background: #f2f2f7;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #007aff;
-}
-
-.workflow-content {
-    flex: 1;
-    text-align: left;
-}
-
-.workflow-content h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #1d1d1f;
-}
-
-.workflow-content p {
-    margin: 0 0 1rem 0;
-    font-size: 0.9rem;
-    color: #86868b;
-}
-
-.workflow-btn {
+.workflow-btn-simple {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
     background: #007aff;
     color: white;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
     transition: all 0.3s ease;
     border: none;
+    box-shadow: 0 4px 15px rgba(0, 122, 255, 0.2);
 }
 
-.workflow-btn:hover {
+.workflow-btn-simple:hover {
     background: #0056b3;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 122, 255, 0.4);
 }
 
-.workflow-btn svg {
+.workflow-btn-simple svg {
     transition: transform 0.3s ease;
 }
 
-.workflow-btn:hover svg {
-    transform: translate(2px, -2px);
+.workflow-btn-simple:hover svg {
+    transform: scale(1.1);
 }
 
 /* Modern Notification Popup */
