@@ -1,0 +1,1 @@
+name: pr-check\non:\n  pull_request:\n    types: [opened, synchronize]\njobs:\n  lint:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - name: Simulated grad CI check\n        run: |\n          echo 'Running quick lint...';\n          exit 1\n

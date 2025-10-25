@@ -1,0 +1,1 @@
+# Experiment notes\n\n- 2025-10-25 (EST): Initial ETL+viz experiment setup; drafting plan for weekly updates.\n
