@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orbis ML Classifier</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<style>
+#!/usr/bin/env python3
+"""Build merged report: Orbis ML Classifier + Research Data. Light mode default, theme toggle."""
+from pathlib import Path
+
+ORIGINAL = Path(__file__).parent.parent / "CLASSIFICATION_REPORT_Mar5.html"
+OUTPUT = Path(__file__).parent / "index.html"
+
+# CSS with light default and dark mode via data-theme
+STYLES = r"""
   :root, [data-theme="light"] {
     --bg: #fafafa;
     --bg-card: #ffffff;
@@ -356,7 +356,17 @@
     min-height: 140px; overflow-x: auto;
   }
   .sim-code-morph .line { display: block; }
-</style>
+"""
+
+HEAD = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbis ML Classifier</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>{STYLES}</style>
 </head>
 <body data-theme="light">
 
@@ -390,19 +400,57 @@
     <button type="button" class="section-nav-btn" data-section="simulation">Simulation</button>
     <button type="button" class="section-nav-btn" data-section="data">Data</button>
   </div>
-  <section id="section-report" class="page-section active">
-    <div class="card"><h2>Summary</h2>
-    <div class="metric-grid">
-      <div class="metric"><div class="val">1.18M</div><div class="lbl">Entities</div></div>
-      <div class="metric"><div class="val">65.3%</div><div class="lbl">Classified</div></div>
-      <div class="metric"><div class="val">98.75%</div><div class="lbl">XLM-R Macro Prec.</div></div>
-      <div class="metric"><div class="val">91.2%</div><div class="lbl">TF-IDF Coverage</div></div>
-    </div>
+'''
+
+TAIL = '''
 </div>
-    <div class="card"><h2>Model Workflow</h2>
-    <p>Three-stage cascade. Each stage runs only when the previous cannot classify with confidence.</p>
-    <div class="dag-container">
-<svg class="dag-svg" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+
+<script>
+(function() {
+  var stored = localStorage.getItem('orbis-theme');
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var isDark = stored === 'dark' || (!stored && prefersDark);
+  function setTheme(dark) {
+    document.body.setAttribute('data-theme', dark ? 'dark' : 'light');
+    document.getElementById('themeLabel').textContent = dark ? 'Light' : 'Dark';
+    localStorage.setItem('orbis-theme', dark ? 'dark' : 'light');
+  }
+  setTheme(isDark);
+  document.getElementById('themeToggle').onclick = function() {
+    var dark = document.body.getAttribute('data-theme') === 'light';
+    setTheme(dark);
+  };
+})();
+
+function toggleUpdates() {
+  var d = document.getElementById('updatesDropdown');
+  d.classList.toggle('show');
+}
+function closeUpdates() { document.getElementById('updatesDropdown').classList.remove('show'); }
+document.getElementById('updatesBell').onclick = toggleUpdates;
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.updates-bell')) closeUpdates();
+});
+
+var updates = [
+  { icon: 'FIX', text: 'Fixed CSV parsing for quoted fields with commas', new: true },
+  { icon: 'CHART', text: 'Fixed visualization charts for all countries', new: true },
+  { icon: 'ADD', text: 'Added missing stats file for LK (Sri Lanka)', new: true },
+  { icon: 'ENHANCE', text: 'Enhanced country data browser with improved search', new: false },
+  { icon: 'DATA', text: 'Entity type distribution charts for all countries', new: false }
+];
+var nc = document.getElementById('notificationContent');
+nc.innerHTML = updates.map(function(u) {
+  return '<div class="update-item' + (u.new ? ' new' : '') + '"><strong>' + u.icon + '</strong> ' + u.text + '</div>';
+}).join('');
+</script>
+<script src="https://puneethkotha.github.io/Research-Data/script.js"></script>
+</body>
+</html>
+'''
+
+# Model Workflow SVG - uses currentColor for theme support
+DAG_SVG = '''<svg class="dag-svg" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="currentColor"/>
@@ -415,7 +463,27 @@
   <g class="dag-node"><rect x="180" y="132" width="160" height="48"/><text x="260" y="154" text-anchor="middle" class="node-title">Step 3: XLM-RoBERTa</text><text x="260" y="168" text-anchor="middle" class="node-meta">~280K (~24%) · ~45 min · $0</text></g>
   <path class="dag-edge" d="M 340 100 L 420 100" marker-end="url(#arrowhead)"/>
   <g class="dag-node"><rect x="420" y="65" width="200" height="70"/><text x="520" y="95" text-anchor="middle" class="node-title">Output</text><text x="520" y="111" text-anchor="middle" class="node-meta">FINAL.csv · ~89% coverage</text></g>
-</svg>
+</svg>'''
+
+# Default to light - so we need isDark = false initially. User said "light mode for github website".
+# Stored pref: if none, use light. So we need: var isDark = stored === 'dark' (only dark if explicitly saved).
+# Let me fix: stored === 'dark' means user chose dark. If no stored, default light. Good.
+# Wait - the user said "light mode" default. So when no stored: use light. isDark = stored === 'dark'. Yes.
+
+# Report section cards (Summary, Workflow, Results, Methods)
+REPORT_CARDS = [
+    ('Summary', '''
+    <div class="metric-grid">
+      <div class="metric"><div class="val">1.18M</div><div class="lbl">Entities</div></div>
+      <div class="metric"><div class="val">65.3%</div><div class="lbl">Classified</div></div>
+      <div class="metric"><div class="val">98.75%</div><div class="lbl">XLM-R Macro Prec.</div></div>
+      <div class="metric"><div class="val">91.2%</div><div class="lbl">TF-IDF Coverage</div></div>
+    </div>
+'''),
+    ('Model Workflow', '''
+    <p>Three-stage cascade. Each stage runs only when the previous cannot classify with confidence.</p>
+    <div class="dag-container">
+''' + DAG_SVG + '''
     </div>
     <div class="pipeline-step">
       <div class="step-num">1</div>
@@ -438,8 +506,8 @@
         <p>Trained on Steps 1 and 2. Zero-cost inference. Target coverage 89%.</p>
       </div>
     </div>
-</div>
-    <div class="card"><h2>Classification Results</h2>
+'''),
+    ('Classification Results', '''
     <table>
       <tr><th>Category</th><th class="num">Count</th><th class="num">%</th><th>Examples</th></tr>
       <tr><td>company</td><td class="num">705,158</td><td class="num">60.0%</td><td>APPLE INC, SIEMENS AG</td></tr>
@@ -449,8 +517,8 @@
       <tr class="highlight"><td>Classified</td><td class="num"><strong>767,635</strong></td><td class="num"><strong>65.3%</strong></td><td></td></tr>
       <tr><td>unknown</td><td class="num">408,605</td><td class="num">34.7%</td><td>Queued for Step 3</td></tr>
     </table>
-</div>
-    <div class="card"><h2>Method Comparison</h2>
+'''),
+    ('Method Comparison', '''
     <table>
       <tr><th>Method</th><th class="num">Precision</th><th class="num">Coverage</th><th>Speed</th><th>Cost</th></tr>
       <tr><td>Rule-based</td><td class="num">~100%</td><td class="num">56.5%</td><td>&lt; 1 min</td><td>$0</td></tr>
@@ -459,73 +527,10 @@
       <tr><td>TF-IDF baseline</td><td class="num">0.782</td><td class="num">91.2%</td><td>&lt; 5 min</td><td>$0</td></tr>
     </table>
     <div class="note">XLM-R best precision, zero marginal cost.</div>
-</div>
+'''),
+]
 
-  <div class="card">
-    <h2>XLM-RoBERTa Training</h2>
-    <table>
-      <tr><th>Epoch</th><th class="num">Train Loss</th><th class="num">Macro Prec.</th><th class="num">Macro Recall</th><th class="num">Macro F1</th><th></th></tr>
-      <tr><td>1</td><td class="num">0.3225</td><td class="num">0.9379</td><td class="num">0.9680</td><td class="num">0.9524</td><td></td></tr>
-      <tr><td>2</td><td class="num">0.1351</td><td class="num">0.9781</td><td class="num">0.9662</td><td class="num">0.9717</td><td></td></tr>
-      <tr><td>3</td><td class="num">0.0895</td><td class="num">0.9772</td><td class="num">0.9736</td><td class="num">0.9754</td><td></td></tr>
-      <tr class="highlight"><td>4</td><td class="num">0.0549</td><td class="num">0.9875</td><td class="num">0.9707</td><td class="num">0.9789</td><td>Best</td></tr>
-    </table>
-    <div class="note">Epoch 4. Abstains when max softmax &lt; 0.80.</div>
-  </div>
-
-  <div class="card">
-    <h2>Precision Design</h2>
-    <p>Precision over recall. Misclassification biases regression. Model abstains when uncertain.</p>
-    <div class="code">
-<span class="kw">THRESHOLD</span> = <span class="val">0.90</span>
-<span class="kw">for</span> entity <span class="kw">in</span> entities:
-    probabilities = model(entity)
-    <span class="kw">if</span> <span class="key">max</span>(probabilities) >= <span class="key">THRESHOLD</span>:
-        label = <span class="key">argmax</span>(probabilities)   <span class="cm"># assign</span>
-    <span class="kw">else</span>:
-        label = <span class="val">"unknown"</span>               <span class="cm"># abstain</span>
-    </div>
-    <table>
-      <tr><th>Metric</th><th class="num">Value</th></tr>
-      <tr><td>Accuracy (1K hand-labeled)</td><td class="num"><strong>97.0%</strong></td></tr>
-      <tr><td>Individual prec. / recall</td><td class="num">0.75 / 0.91</td></tr>
-      <tr><td>Coverage</td><td class="num">88.7%</td></tr>
-      <tr><td>Abstention</td><td class="num">11.3%</td></tr>
-    </table>
-  </div>
-
-  <div class="card">
-    <h2>Outputs</h2>
-    <table>
-      <tr><th>File</th><th>Description</th><th class="num">Rows</th></tr>
-      <tr><td><code>CLASSIFIED_ALL_PARENTS_FINAL.csv</code></td><td>Steps 1 and 2, 65.3% coverage</td><td class="num">1,176,240</td></tr>
-      <tr><td><code>CLASSIFIED_ALL_PARENTS_TFIDF.csv</code></td><td>With TF-IDF baseline, 91.2% coverage</td><td class="num">1,176,240</td></tr>
-      <tr><td><code>01_validation_report.txt</code></td><td>Hand-labeled validation</td><td class="num"></td></tr>
-      <tr><td><code>scripts/05_train_xlmr_colab.ipynb</code></td><td>Training notebook (Colab)</td><td class="num"></td></tr>
-    </table>
-    <div class="code">
-<span class="key">Parent_name</span>,<span class="key">parent_ID</span>,<span class="key">parent_cty</span>,<span class="key">category</span>,<span class="key">confidence</span>,<span class="key">method</span>
-APPLE INC,US123456,US,<span class="val">company</span>,<span class="val">0.99</span>,rule
-JOHN SMITH,GB789012,GB,<span class="val">individual</span>,<span class="val">0.95</span>,llm_api
-FAMILIA GARCIA & HIJOS SL,ES345678,ES,<span class="val">family_firm</span>,<span class="val">0.91</span>,xlmr
-DEPARTMENT OF DEFENSE,US000001,US,<span class="val">government</span>,<span class="val">1.00</span>,rule
-QUINNELL SEPTIC & WELL SERVICE,US148650,US,<span class="cm">unknown</span>,<span class="val">0.72</span>,unknown
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Status</h2>
-    <table>
-      <tr><th>#</th><th>Task</th><th>Status</th></tr>
-      <tr><td>1</td><td>XLM-R inference on 408K unknowns</td><td>In progress</td></tr>
-      <tr><td>2</td><td><code>FINAL_XLMR.csv</code> (89% coverage)</td><td>Pending</td></tr>
-      <tr><td>3</td><td>Archive model weights</td><td>Pending</td></tr>
-      <tr><td>4</td><td>Methodology section</td><td></td></tr>
-    </table>
-  </div>
-  </section>
-  <section id="section-simulation" class="page-section">
-    <div class="card"><h2>Simulation</h2>
+SIMULATION_CARD = ('Simulation', '''
     <p>Click an entity. See which step classifies it. Switch tabs to view code from each stage.</p>
     <div class="sim-examples" id="simExamples">
       <span class="sim-example active" data-entity="APPLE INC" data-step="1" data-cat="company">APPLE INC</span>
@@ -603,10 +608,9 @@ QUINNELL SEPTIC & WELL SERVICE,US148650,US,<span class="cm">unknown</span>,<span
       });
     })();
     </script>
-</div>
-  </section>
-  <section id="section-data" class="page-section">
-    <div class="card"><h2>Data by Country</h2>
+''')
+
+DATA_CARD = ('Data by Country', '''
     <div class="country-browser-section country-browser">
       <div class="search-bar">
         <input type="text" id="search" placeholder="Search country..." aria-label="Search">
@@ -633,9 +637,75 @@ QUINNELL SEPTIC & WELL SERVICE,US148650,US,<span class="cm">unknown</span>,<span
         </div>
       </div>
     </div>
-</div>
-  </section>
+''')
 
+EXTRA_CARDS = '''
+  <div class="card">
+    <h2>XLM-RoBERTa Training</h2>
+    <table>
+      <tr><th>Epoch</th><th class="num">Train Loss</th><th class="num">Macro Prec.</th><th class="num">Macro Recall</th><th class="num">Macro F1</th><th></th></tr>
+      <tr><td>1</td><td class="num">0.3225</td><td class="num">0.9379</td><td class="num">0.9680</td><td class="num">0.9524</td><td></td></tr>
+      <tr><td>2</td><td class="num">0.1351</td><td class="num">0.9781</td><td class="num">0.9662</td><td class="num">0.9717</td><td></td></tr>
+      <tr><td>3</td><td class="num">0.0895</td><td class="num">0.9772</td><td class="num">0.9736</td><td class="num">0.9754</td><td></td></tr>
+      <tr class="highlight"><td>4</td><td class="num">0.0549</td><td class="num">0.9875</td><td class="num">0.9707</td><td class="num">0.9789</td><td>Best</td></tr>
+    </table>
+    <div class="note">Epoch 4. Abstains when max softmax &lt; 0.80.</div>
+  </div>
+
+  <div class="card">
+    <h2>Precision Design</h2>
+    <p>Precision over recall. Misclassification biases regression. Model abstains when uncertain.</p>
+    <div class="code">
+<span class="kw">THRESHOLD</span> = <span class="val">0.90</span>
+<span class="kw">for</span> entity <span class="kw">in</span> entities:
+    probabilities = model(entity)
+    <span class="kw">if</span> <span class="key">max</span>(probabilities) >= <span class="key">THRESHOLD</span>:
+        label = <span class="key">argmax</span>(probabilities)   <span class="cm"># assign</span>
+    <span class="kw">else</span>:
+        label = <span class="val">"unknown"</span>               <span class="cm"># abstain</span>
+    </div>
+    <table>
+      <tr><th>Metric</th><th class="num">Value</th></tr>
+      <tr><td>Accuracy (1K hand-labeled)</td><td class="num"><strong>97.0%</strong></td></tr>
+      <tr><td>Individual prec. / recall</td><td class="num">0.75 / 0.91</td></tr>
+      <tr><td>Coverage</td><td class="num">88.7%</td></tr>
+      <tr><td>Abstention</td><td class="num">11.3%</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Outputs</h2>
+    <table>
+      <tr><th>File</th><th>Description</th><th class="num">Rows</th></tr>
+      <tr><td><code>CLASSIFIED_ALL_PARENTS_FINAL.csv</code></td><td>Steps 1 and 2, 65.3% coverage</td><td class="num">1,176,240</td></tr>
+      <tr><td><code>CLASSIFIED_ALL_PARENTS_TFIDF.csv</code></td><td>With TF-IDF baseline, 91.2% coverage</td><td class="num">1,176,240</td></tr>
+      <tr><td><code>01_validation_report.txt</code></td><td>Hand-labeled validation</td><td class="num"></td></tr>
+      <tr><td><code>scripts/05_train_xlmr_colab.ipynb</code></td><td>Training notebook (Colab)</td><td class="num"></td></tr>
+    </table>
+    <div class="code">
+<span class="key">Parent_name</span>,<span class="key">parent_ID</span>,<span class="key">parent_cty</span>,<span class="key">category</span>,<span class="key">confidence</span>,<span class="key">method</span>
+APPLE INC,US123456,US,<span class="val">company</span>,<span class="val">0.99</span>,rule
+JOHN SMITH,GB789012,GB,<span class="val">individual</span>,<span class="val">0.95</span>,llm_api
+FAMILIA GARCIA & HIJOS SL,ES345678,ES,<span class="val">family_firm</span>,<span class="val">0.91</span>,xlmr
+DEPARTMENT OF DEFENSE,US000001,US,<span class="val">government</span>,<span class="val">1.00</span>,rule
+QUINNELL SEPTIC & WELL SERVICE,US148650,US,<span class="cm">unknown</span>,<span class="val">0.72</span>,unknown
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Status</h2>
+    <table>
+      <tr><th>#</th><th>Task</th><th>Status</th></tr>
+      <tr><td>1</td><td>XLM-R inference on 408K unknowns</td><td>In progress</td></tr>
+      <tr><td>2</td><td><code>FINAL_XLMR.csv</code> (89% coverage)</td><td>Pending</td></tr>
+      <tr><td>3</td><td>Archive model weights</td><td>Pending</td></tr>
+      <tr><td>4</td><td>Methodology section</td><td></td></tr>
+    </table>
+  </div>
+'''
+
+# Fix theme init: default light. If stored='dark', use dark. If no stored, use light.
+TAIL_INIT = '''
   <div class="cover">
     <div class="meta">
       <a href="https://www.linkedin.com/in/puneeth-kotha-760360215" target="_blank" rel="noopener">Puneeth Kotha</a> · <strong>Prof. Belen Villalonga</strong> (Supervisor)<br>
@@ -713,7 +783,7 @@ nc.innerHTML = updates.map(function(u) {
     var corrections = [];
     var notes = [];
     var section = '';
-    var lines = (raw || '').split(/\r?\n/);
+    var lines = (raw || '').split(/\\r?\\n/);
     for (var i = 0; i < lines.length; i++) {
       var line = lines[i];
       var t = line.trim();
@@ -721,15 +791,15 @@ nc.innerHTML = updates.map(function(u) {
       if (t === 'Entity Type Distribution:') { section = 'entity'; continue; }
       if (t === 'Corrections Made:') { section = 'corr'; continue; }
       if (t === 'Notes:') { section = 'notes'; continue; }
-      var m = t.match(/Total (Records|Entries):\s*(\d+)/);
+      var m = t.match(/Total (Records|Entries):\\s*(\\d+)/);
       if (m) { total = parseInt(m[2], 10); continue; }
       if (t.startsWith('-')) {
         var bullet = t.slice(1).trim();
         if (section === 'lang') {
-          var lm = bullet.match(/(.+?)\s*\(([^)]+)\):\s*(\d+)\s+(?:records?|entries?)\s*(?:\(([^)]+)\))?/);
+          var lm = bullet.match(/(.+?)\\s*\\(([^)]+)\\):\\s*(\\d+)\\s+(?:records?|entries?)\\s*(?:\\(([^)]+)\\))?/);
           if (lm) langs.push({ name: lm[1].trim(), code: lm[2], count: parseInt(lm[3], 10), pct: (lm[4] || '').trim() });
         } else if (section === 'entity') {
-          var em = bullet.match(/(.+?):\s*(\d+)\s+(?:records?|entries?)\s*(?:\(([^)]+)\))?/);
+          var em = bullet.match(/(.+?):\\s*(\\d+)\\s+(?:records?|entries?)\\s*(?:\\(([^)]+)\\))?/);
           if (em) entities.push({ type: em[1].trim(), count: parseInt(em[2], 10), pct: em[3] || '' });
         } else if (section === 'corr') corrections.push(bullet);
         else if (section === 'notes') notes.push(bullet);
@@ -779,3 +849,31 @@ nc.innerHTML = updates.map(function(u) {
 <script src="https://puneethkotha.github.io/Research-Data/script.js"></script>
 </body>
 </html>
+'''
+
+# Fix Country Viewer chart container: script expects a wrapper with #statsChart inside
+# The script creates chart in #statsChart. Our structure has chartContent > div > canvas#statsChart
+# But displayStatsWithVisualization sets chartContainer.innerHTML = '<div><canvas id="statsChart"></canvas></div>'
+# So it REPLACES our content. We need chartContent to be empty or the script will overwrite. Actually the script overwrites chartContent with that HTML. So we should have chartContent empty, and the script adds the canvas. But we also have a div with id statsChart - that could conflict. Let me check the script again.
+# displayStatsWithVisualization: chartContainer.innerHTML = '<div><canvas id="statsChart"></canvas></div>';
+# So it creates its own canvas. Our pre-existing canvas would be replaced. Good.
+# But we have viewer-inner with id chartContent. The script does: chartContainer.innerHTML = '...'. So our structure gets replaced. The script passes document.getElementById('chartContent') as chartContainer. So chartContent will get the div+canvas. Good.
+
+with open(OUTPUT, 'w') as f:
+    f.write(HEAD)
+    f.write('  <section id="section-report" class="page-section active">\n')
+    for title, body in REPORT_CARDS:
+        f.write(f'    <div class="card"><h2>{title}</h2>{body}</div>\n')
+    f.write(EXTRA_CARDS)
+    f.write('  </section>\n')
+    f.write('  <section id="section-simulation" class="page-section">\n')
+    t, b = SIMULATION_CARD
+    f.write(f'    <div class="card"><h2>{t}</h2>{b}</div>\n')
+    f.write('  </section>\n')
+    f.write('  <section id="section-data" class="page-section">\n')
+    t, b = DATA_CARD
+    f.write(f'    <div class="card"><h2>{t}</h2>{b}</div>\n')
+    f.write('  </section>\n')
+    f.write(TAIL_INIT)
+
+print(f"Wrote {OUTPUT}")
