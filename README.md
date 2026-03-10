@@ -60,4 +60,4 @@ HTML, CSS, JavaScript, Chart.js. No backend; data served as static files.
 
 ## Contact
 
-Puneeth Kotha · Prof. Belen Villalonga (Supervisor) · NYU Stern
+Puneeth Kotha · NYU Stern
