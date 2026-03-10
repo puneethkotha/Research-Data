@@ -266,46 +266,9 @@
     background: var(--metric-bg); border-radius: 8px;
     padding: 16px; min-height: 120px; border: 1px solid var(--border);
   }
-  .country-stats-formatted {
-    font-size: 14px; color: var(--text-muted);
-  }
-  .country-stats-formatted .stats-total {
-    font-size: 22px; font-weight: 600; color: var(--text);
-  }
-  .country-stats-formatted .stats-total .stats-label {
-    font-size: 12px; font-weight: 400; color: var(--text-dim);
-    margin-left: 8px;
-  }
-  .country-stats-formatted .stats-block { margin-bottom: 20px; }
-  .country-stats-formatted .stats-block:last-child { margin-bottom: 0; }
-  .country-stats-formatted .stats-block h4 {
-    font-size: 12px; font-weight: 600; color: var(--text-muted);
-    margin: 0 0 10px 0; text-transform: uppercase; letter-spacing: 0.04em;
-  }
-  .country-stats-formatted .stats-mini-table {
-    width: 100%; border-collapse: collapse; font-size: 13px;
-  }
-  .country-stats-formatted .stats-mini-table th,
-  .country-stats-formatted .stats-mini-table td {
-    padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border);
-  }
-  .country-stats-formatted .stats-mini-table th {
-    background: transparent; color: var(--text-dim); font-weight: 500;
-  }
-  .country-stats-formatted .stats-mini-table td.num {
-    text-align: right; font-variant-numeric: tabular-nums;
-  }
-  .country-stats-formatted .stats-notes {
-    margin-top: 16px; padding-top: 16px;
-    border-top: 1px solid var(--border);
-  }
-  .country-stats-formatted .stats-notes ul {
-    margin: 0; padding-left: 18px; font-size: 13px;
-    line-height: 1.6; color: var(--text-dim);
-  }
-  .country-stats-formatted .stats-total-block {
-    margin-top: 20px; padding-top: 16px;
-    border-top: 1px solid var(--border);
+  .stats-content {
+    font-size: 13px; line-height: 1.7; color: var(--text-muted);
+    white-space: pre-wrap; word-wrap: break-word;
   }
   .csv-table { width: 100%; border-collapse: collapse; font-size: 13px; }
   .csv-table th, .csv-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
@@ -703,78 +666,6 @@ document.getElementById('notificationBadge').style.display = newCount ? 'flex' :
 nc.innerHTML = updates.map(function(u) {
   return '<div class="update-item' + (u.new ? ' new' : '') + '"><strong>' + u.icon + '</strong> ' + u.text + '</div>';
 }).join('');
-</script>
-<script>
-(function() {
-  function formatStatsContent(raw) {
-    var total = 0;
-    var langs = [];
-    var entities = [];
-    var corrections = [];
-    var notes = [];
-    var section = '';
-    var lines = (raw || '').split(/\r?\n/);
-    for (var i = 0; i < lines.length; i++) {
-      var line = lines[i];
-      var t = line.trim();
-      if (t === 'Language Distribution:') { section = 'lang'; continue; }
-      if (t === 'Entity Type Distribution:') { section = 'entity'; continue; }
-      if (t === 'Corrections Made:') { section = 'corr'; continue; }
-      if (t === 'Notes:') { section = 'notes'; continue; }
-      var m = t.match(/Total (Records|Entries):\s*(\d+)/);
-      if (m) { total = parseInt(m[2], 10); continue; }
-      if (t.startsWith('-')) {
-        var bullet = t.slice(1).trim();
-        if (section === 'lang') {
-          var lm = bullet.match(/(.+?)\s*\(([^)]+)\):\s*(\d+)\s+(?:records?|entries?)\s*(?:\(([^)]+)\))?/);
-          if (lm) langs.push({ name: lm[1].trim(), code: lm[2], count: parseInt(lm[3], 10), pct: (lm[4] || '').trim() });
-        } else if (section === 'entity') {
-          var em = bullet.match(/(.+?):\s*(\d+)\s+(?:records?|entries?)\s*(?:\(([^)]+)\))?/);
-          if (em) entities.push({ type: em[1].trim(), count: parseInt(em[2], 10), pct: em[3] || '' });
-        } else if (section === 'corr') corrections.push(bullet);
-        else if (section === 'notes') notes.push(bullet);
-      }
-    }
-    var html = '';
-    if (entities.length) {
-      html += '<div class="stats-block"><h4>Entity types</h4><table class="stats-mini-table"><thead><tr><th>Type</th><th class="num">Count</th><th class="num">%</th></tr></thead><tbody>';
-      for (var j = 0; j < entities.length; j++) {
-        html += '<tr><td>' + entities[j].type + '</td><td class="num">' + entities[j].count.toLocaleString() + '</td><td class="num">' + entities[j].pct + '</td></tr>';
-      }
-      html += '</tbody></table></div>';
-    }
-    if (langs.length) {
-      html += '<div class="stats-block"><h4>Languages</h4><table class="stats-mini-table"><thead><tr><th>Language</th><th class="num">Records</th><th class="num">%</th></tr></thead><tbody>';
-      for (var k = 0; k < langs.length; k++) {
-        html += '<tr><td>' + langs[k].name + ' (' + langs[k].code + ')</td><td class="num">' + langs[k].count.toLocaleString() + '</td><td class="num">' + (langs[k].pct || '') + '</td></tr>';
-      }
-      html += '</tbody></table></div>';
-    }
-    if (notes.length) {
-      html += '<div class="stats-block stats-notes"><h4>Notes</h4><ul>';
-      for (var n = 0; n < notes.length; n++) html += '<li>' + notes[n] + '</li>';
-      html += '</ul></div>';
-    }
-    if (corrections.length && corrections[0].toLowerCase().indexOf('none') === -1) {
-      html += '<div class="stats-block"><h4>Corrections</h4><ul>';
-      for (var c = 0; c < corrections.length; c++) html += '<li>' + corrections[c] + '</li>';
-      html += '</ul></div>';
-    }
-    if (!html) return raw;
-    if (total > 0) html += '<div class="stats-block stats-total-block"><div class="stats-total">' + total.toLocaleString() + '<span class="stats-label">Total records</span></div></div>';
-    return '<div class="country-stats-formatted">' + html + '</div>';
-  }
-  var el = document.getElementById('statsContent');
-  if (!el) return;
-  var obs = new MutationObserver(function(mutations) {
-    var wrap = el.querySelector('.stats-content');
-    if (wrap && wrap.textContent && !el.querySelector('.country-stats-formatted')) {
-      var formatted = formatStatsContent(wrap.textContent);
-      if (formatted !== wrap.textContent) el.innerHTML = formatted;
-    }
-  });
-  obs.observe(el, { childList: true, subtree: true });
-})();
 </script>
 <script src="https://puneethkotha.github.io/Research-Data/script.js"></script>
 </body>
