@@ -1,2 +1,10 @@
-# Python dependencies for Research Data Web Application
-# No external dependencies required - uses only Python standard library
+# Pipeline
+anthropic>=0.39.0
+pandas>=2.0
+pyreadstat>=1.2
+scikit-learn>=1.3
+torch>=2.0
+transformers>=4.36
+
+# Report builder
+# build_report.py uses stdlib only; no extras

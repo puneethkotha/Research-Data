@@ -13,13 +13,32 @@ Classification of parent entities in vertical ownership chains across global mar
 - **Family Firm** – Family-owned (e.g. Smith & Sons Ltd)
 - **Government** – Government agencies and public institutions
 
-Research question: do ownership patterns (A → B → C chains) differ between widely held firms, family firms, and government-owned firms?
+## Tech stack
 
-## Model Workflow
+| Layer | Stack |
+|-------|-------|
+| Pipeline | Python 3.10+, pandas, Anthropic API, PyTorch, transformers |
+| Rule engine | Regex, keyword matching, suffix lists |
+| LLM | Claude Haiku 3.5 via Batches API |
+| ML | XLM-RoBERTa fine-tuned (Hugging Face) |
+| Web | HTML, CSS, JavaScript, Chart.js |
 
-1. **Rule-based** – Keywords, suffixes (GMBH, INC, LTD), government patterns. 56.5% coverage.
-2. **LLM API** – Claude Haiku via Anthropic Batches. 8.8% coverage.
-3. **XLM-RoBERTa** – Trained on steps 1 and 2. Zero-cost inference. Target ~89% coverage.
+## Pipeline scripts
+
+| Script | Purpose |
+|--------|---------|
+| `01_validate_claude_on_train.py` | Accuracy vs manual labels |
+| `02_rule_based_filter.py` | Deterministic rules, ~56% coverage |
+| `03_submit_claude_batches.py` | Submit to Anthropic Batches |
+| `04_collect_and_merge.py` | Merge rule + API results |
+| `05_train_xlmr.py` | Fine-tune XLM-RoBERTa |
+
+Run from project root. Paths in scripts assume `output/` and source `.dta`; adjust for your setup.
+
+```bash
+pip install -r requirements.txt
+python scripts/02_rule_based_filter.py   # example
+```
 
 ## Data
 
@@ -42,21 +61,15 @@ August/
 | language     | Detected language    |
 | entity_type  | individual, company, family_firm, government |
 
-### Stats file
-
-Per-country totals, language distribution, entity type distribution, corrections log.
-
 ## Web interface
 
-- **Report** – Summary metrics, workflow diagram, classification results
+- **Report** – Metrics, workflow diagram, classification results
 - **Simulation** – Entity classification walkthrough
-- **Data by Country** – Browse by country, view CSV, stats, charts
+- **Data by Country** – Browse by country, CSV, stats, charts
 
 Hosted at [puneethkotha.github.io/Research-Data](https://puneethkotha.github.io/Research-Data/).
 
-## Stack
-
-HTML, CSS, JavaScript, Chart.js. No backend; data served as static files.
+Built with `build_report.py`; outputs `index.html`.
 
 ## Contact
 
